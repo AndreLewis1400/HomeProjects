@@ -1,4 +1,4 @@
-package queue;
+package ArrayImplementationofQueue;
 
 public class QueueTest {
 
