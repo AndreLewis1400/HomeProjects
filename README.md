@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FIU Computer Science Projects
 
 This repository contains programming assignments and projects from various Computer Science courses at FIU.
@@ -54,3 +55,6 @@ This course covers systems programming concepts and implementations in C, includ
 ---
 
 For more details, see the README files in each course subfolder.
+=======
+# HomeProjects
+>>>>>>> 9aa957b (Add COP4338 assignment submission with comments and README)
