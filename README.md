@@ -18,6 +18,7 @@ This course covers fundamental concepts and techniques in data mining, including
   - Assignments: Data mining assignments and CRISP-DM documentation
   - [Data Cleaning](CAP4770_Data_Mining/Data_Cleaning): Data preprocessing and cleaning
   - [Data Transformation & Feature Engineering](CAP4770_Data_Mining/Data%20Transformation%20%26%20Feature%20Engineering): Feature engineering notebook
+  - [Regression Model Evaluation Reflection](CAP4770_Data_Mining/regression_model_evaluation_reflection-2.ipynb): Reflection and analysis of regression model evaluation metrics and results
 
 ### COP3350 Programming 1
 This course introduces programming fundamentals in Java, including:
