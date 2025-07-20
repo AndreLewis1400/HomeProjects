@@ -1,0 +1,4 @@
+(cloudia.txt, attack-a)
+(oakley.txt, attack-b)
+(precipitation.csv, attack-c)
+(squeaky.txt, attack-b)
