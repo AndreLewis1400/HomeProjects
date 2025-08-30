@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gecko Detection System - Quick Test</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+            background: #1a1a1a; 
+            color: white; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            background: linear-gradient(45deg, #2c3e50, #3498db);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .camera-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+            gap: 20px; 
+            margin-bottom: 20px;
+        }
+        .camera-feed { 
+            border: 2px solid #333; 
+            border-radius: 10px; 
+            padding: 10px; 
+            background: #2a2a2a;
+        }
+        .camera-title { 
+            text-align: center; 
+            margin-bottom: 10px; 
+            font-size: 18px; 
+            font-weight: bold;
+            color: #3498db;
+        }
+        .camera-image { 
+            width: 100%; 
+            height: auto; 
+            border-radius: 5px; 
+        }
+        .status { 
+            text-align: center; 
+            margin: 20px 0; 
+            padding: 15px; 
+            background: #333; 
+            border-radius: 10px;
+            border-left: 5px solid #27ae60;
+        }
+        .controls {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .control-panel {
+            background: #2a2a2a;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #444;
+        }
+        .control-panel h3 {
+            margin-top: 0;
+            color: #3498db;
+        }
+        .btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin: 2px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #2980b9;
+        }
+        .btn.active {
+            background: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🦎 Gecko Detection System - Quick Test</h1>
+        <p>Testing Camera Feeds and System Status</p>
+    </div>
+
+    <div class="status">
+        <h3>📊 System Status</h3>
+        <p>Pi 5 Camera Streaming: <span style="color: #27ae60;">✅ Online</span> |
+           Jetson Detection: <span style="color: #e74c3c;">❌ Offline</span> |
+           Network: <span style="color: #27ae60;">✅ Connected</span></p>
+    </div>
+
+    <div class="controls">
+        <div class="control-panel">
+            <h3>🎨 RGB Light Control</h3>
+            <button class="btn" onclick="setRGB('gecko')">Gecko Mode</button>
+            <button class="btn" onclick="setRGB('rainbow')">Rainbow</button>
+            <button class="btn" onclick="setRGB('blue')">Blue</button>
+            <button class="btn" onclick="setRGB('green')">Green</button>
+            <button class="btn" onclick="setRGB('red')">Red</button>
+            <button class="btn" onclick="setRGB('off')">Off</button>
+        </div>
+        
+        <div class="control-panel">
+            <h3>📺 Display Control</h3>
+            <button class="btn" onclick="setDisplay('system')">System</button>
+            <button class="btn" onclick="setDisplay('cameras')">Cameras</button>
+            <button class="btn" onclick="setDisplay('gecko')">Gecko</button>
+            <button class="btn" onclick="setDisplay('status')">Status</button>
+        </div>
+    </div>
+
+    <div class="camera-grid">
+        <div class="camera-feed">
+            <div class="camera-title">📹 Camera 0 - Main Habitat</div>
+            <img src="http://192.168.50.108:8080/camera0" class="camera-image" alt="Camera 0" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQwIiBoZWlnaHQ9IjQ4MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzMzIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5DYW1lcmEgMCAtIE5vdCBhdmFpbGFibGU8L3RleHQ+PC9zdmc+'">
+        </div>
+
+        <div class="camera-feed">
+            <div class="camera-title">📹 Camera 2 - Secondary View</div>
+            <img src="http://192.168.50.108:8080/camera2" class="camera-image" alt="Camera 2" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQwIiBoZWlnaHQ9IjQ4MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzMzIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5DYW1lcmEgMiAtIE5vdCBhdmFpbGFibGU8L3RleHQ+PC9zdmc+'">
+        </div>
+
+        <div class="camera-feed">
+            <div class="camera-title">📹 Camera 4 - Wide Angle</div>
+            <img src="http://192.168.50.108:8080/camera4" class="camera-image" alt="Camera 4" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQwIiBoZWlnaHQ9IjQ4MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzMzIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5DYW1lcmEgNCAtIE5vdCBhdmFpbGFibGU8L3RleHQ+PC9zdmc+'">
+        </div>
+    </div>
+
+    <div class="status">
+        <h3>🔧 Quick Actions</h3>
+        <button class="btn" onclick="window.open('http://192.168.50.108:8080', '_blank')">Open Pi 5 Interface</button>
+        <button class="btn" onclick="window.open('http://100.126.96.99:5000', '_blank')">Open Jetson Interface</button>
+        <button class="btn" onclick="refreshCameras()">Refresh Cameras</button>
+        <button class="btn" onclick="testRGB()">Test RGB Lights</button>
+    </div>
+
+    <script>
+        // Auto-refresh images every 5 seconds
+        setInterval(function() {
+            const images = document.querySelectorAll('.camera-image');
+            images.forEach(img => {
+                img.src = img.src + '?t=' + new Date().getTime();
+            });
+        }, 5000);
+
+        // RGB Control
+        function setRGB(mode) {
+            fetch(`http://192.168.50.108:8080/rgb/${mode}`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log('RGB set:', data);
+                    // Update button states
+                    document.querySelectorAll('[onclick^="setRGB"]').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    event.target.classList.add('active');
+                })
+                .catch(error => console.error('RGB Error:', error));
+        }
+
+        // Display Control
+        function setDisplay(screen) {
+            fetch(`http://192.168.50.108:8080/display/${screen}`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Display set:', data);
+                    // Update button states
+                    document.querySelectorAll('[onclick^="setDisplay"]').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    event.target.classList.add('active');
+                })
+                .catch(error => console.error('Display Error:', error));
+        }
+
+        // Refresh cameras
+        function refreshCameras() {
+            const images = document.querySelectorAll('.camera-image');
+            images.forEach(img => {
+                img.src = img.src.split('?')[0] + '?t=' + new Date().getTime();
+            });
+        }
+
+        // Test RGB lights
+        function testRGB() {
+            setRGB('gecko');
+            setTimeout(() => setRGB('rainbow'), 1000);
+            setTimeout(() => setRGB('blue'), 2000);
+            setTimeout(() => setRGB('green'), 3000);
+            setTimeout(() => setRGB('red'), 4000);
+            setTimeout(() => setRGB('off'), 5000);
+        }
+
+        // Initialize with default states
+        document.addEventListener('DOMContentLoaded', function() {
+            setRGB('gecko');
+            setDisplay('system');
+        });
+    </script>
+</body>
+</html>

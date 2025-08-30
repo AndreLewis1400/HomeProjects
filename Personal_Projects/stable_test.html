@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gecko Detection System - Stable Test</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+            background: #1a1a1a; 
+            color: white; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            background: linear-gradient(45deg, #2c3e50, #3498db);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .status-panel {
+            background: #2a2a2a;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #3498db;
+        }
+        .camera-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+            gap: 20px; 
+            margin-bottom: 20px;
+        }
+        .camera-feed { 
+            border: 2px solid #333; 
+            border-radius: 10px; 
+            padding: 10px; 
+            background: #2a2a2a;
+            min-height: 300px;
+        }
+        .camera-title { 
+            text-align: center; 
+            margin-bottom: 10px; 
+            font-size: 18px; 
+            font-weight: bold;
+            color: #3498db;
+        }
+        .camera-image { 
+            width: 100%; 
+            height: auto; 
+            border-radius: 5px; 
+            min-height: 240px;
+            background: #333;
+        }
+        .controls {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .control-panel {
+            background: #2a2a2a;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #444;
+        }
+        .control-panel h3 {
+            margin-top: 0;
+            color: #3498db;
+        }
+        .btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin: 2px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #2980b9;
+        }
+        .btn.active {
+            background: #27ae60;
+        }
+        .btn.error {
+            background: #e74c3c;
+        }
+        .connection-status {
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 5px 0;
+            font-weight: bold;
+        }
+        .status-online {
+            background: #27ae60;
+            color: white;
+        }
+        .status-offline {
+            background: #e74c3c;
+            color: white;
+        }
+        .status-testing {
+            background: #f39c12;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🦎 Gecko Detection System - Stable Test</h1>
+        <p>Testing Camera Feeds with Better Connection Handling</p>
+    </div>
+
+    <div class="status-panel">
+        <h3>📊 Connection Status</h3>
+        <div id="pi5-status" class="connection-status status-testing">Testing Pi 5 Connection...</div>
+        <div id="camera-status" class="connection-status status-testing">Testing Camera Streams...</div>
+        <div id="rgb-status" class="connection-status status-testing">Testing RGB Controls...</div>
+    </div>
+
+    <div class="controls">
+        <div class="control-panel">
+            <h3>🎨 RGB Light Control</h3>
+            <button class="btn" onclick="setRGB('gecko')">Gecko Mode</button>
+            <button class="btn" onclick="setRGB('rainbow')">Rainbow</button>
+            <button class="btn" onclick="setRGB('blue')">Blue</button>
+            <button class="btn" onclick="setRGB('green')">Green</button>
+            <button class="btn" onclick="setRGB('red')">Red</button>
+            <button class="btn" onclick="setRGB('off')">Off</button>
+        </div>
+        
+        <div class="control-panel">
+            <h3>📺 Display Control</h3>
+            <button class="btn" onclick="setDisplay('system')">System</button>
+            <button class="btn" onclick="setDisplay('cameras')">Cameras</button>
+            <button class="btn" onclick="setDisplay('gecko')">Gecko</button>
+            <button class="btn" onclick="setDisplay('status')">Status</button>
+        </div>
+    </div>
+
+    <div class="camera-grid">
+        <div class="camera-feed">
+            <div class="camera-title">📹 Camera 0 - Main Habitat</div>
+            <img id="camera0" src="http://192.168.50.108:8080/camera0" class="camera-image" alt="Camera 0" 
+                 onload="cameraLoaded(0)" onerror="cameraError(0)">
+            <div id="camera0-status" class="connection-status status-testing">Loading...</div>
+        </div>
+
+        <div class="camera-feed">
+            <div class="camera-title">📹 Camera 2 - Secondary View</div>
+            <img id="camera2" src="http://192.168.50.108:8080/camera2" class="camera-image" alt="Camera 2" 
+                 onload="cameraLoaded(2)" onerror="cameraError(2)">
+            <div id="camera2-status" class="connection-status status-testing">Loading...</div>
+        </div>
+
+        <div class="camera-feed">
+            <div class="camera-title">📹 Camera 4 - Wide Angle</div>
+            <img id="camera4" src="http://192.168.50.108:8080/camera4" class="camera-image" alt="Camera 4" 
+                 onload="cameraLoaded(4)" onerror="cameraError(4)">
+            <div id="camera4-status" class="connection-status status-testing">Loading...</div>
+        </div>
+    </div>
+
+    <div class="status-panel">
+        <h3>🔧 Quick Actions</h3>
+        <button class="btn" onclick="window.open('http://192.168.50.108:8080', '_blank')">Open Pi 5 Interface</button>
+        <button class="btn" onclick="refreshAllCameras()">Refresh All Cameras</button>
+        <button class="btn" onclick="testRGBSequence()">Test RGB Sequence</button>
+        <button class="btn" onclick="checkSystemStatus()">Check System Status</button>
+    </div>
+
+    <script>
+        let cameraStatus = {0: false, 2: false, 4: false};
+        let rgbWorking = false;
+        let displayWorking = false;
+
+        // Test Pi 5 connection
+        function testPi5Connection() {
+            fetch('http://192.168.50.108:8080/status', {method: 'GET', timeout: 5000})
+                .then(response => {
+                    if (response.ok) {
+                        document.getElementById('pi5-status').className = 'connection-status status-online';
+                        document.getElementById('pi5-status').textContent = '✅ Pi 5: Online';
+                        return response.json();
+                    } else {
+                        throw new Error('HTTP ' + response.status);
+                    }
+                })
+                .then(data => {
+                    console.log('Pi 5 Status:', data);
+                    testRGBControls();
+                })
+                .catch(error => {
+                    document.getElementById('pi5-status').className = 'connection-status status-offline';
+                    document.getElementById('pi5-status').textContent = '❌ Pi 5: Offline - ' + error.message;
+                });
+        }
+
+        // Test RGB controls
+        function testRGBControls() {
+            fetch('http://192.168.50.108:8080/rgb/gecko', {method: 'GET', timeout: 3000})
+                .then(response => {
+                    if (response.ok) {
+                        rgbWorking = true;
+                        document.getElementById('rgb-status').className = 'connection-status status-online';
+                        document.getElementById('rgb-status').textContent = '✅ RGB Controls: Working';
+                    } else {
+                        throw new Error('HTTP ' + response.status);
+                    }
+                })
+                .catch(error => {
+                    document.getElementById('rgb-status').className = 'connection-status status-offline';
+                    document.getElementById('rgb-status').textContent = '❌ RGB Controls: Failed';
+                });
+        }
+
+        // Camera load handlers
+        function cameraLoaded(cameraIndex) {
+            cameraStatus[cameraIndex] = true;
+            const statusElement = document.getElementById(`camera${cameraIndex}-status`);
+            statusElement.className = 'connection-status status-online';
+            statusElement.textContent = '✅ Camera ' + cameraIndex + ': Connected';
+            
+            // Update overall camera status
+            updateCameraStatus();
+        }
+
+        function cameraError(cameraIndex) {
+            cameraStatus[cameraIndex] = false;
+            const statusElement = document.getElementById(`camera${cameraIndex}-status`);
+            statusElement.className = 'connection-status status-offline';
+            statusElement.textContent = '❌ Camera ' + cameraIndex + ': Connection Failed';
+            
+            // Update overall camera status
+            updateCameraStatus();
+        }
+
+        function updateCameraStatus() {
+            const workingCameras = Object.values(cameraStatus).filter(status => status).length;
+            const totalCameras = Object.keys(cameraStatus).length;
+            
+            if (workingCameras > 0) {
+                document.getElementById('camera-status').className = 'connection-status status-online';
+                document.getElementById('camera-status').textContent = `✅ Cameras: ${workingCameras}/${totalCameras} Working`;
+            } else {
+                document.getElementById('camera-status').className = 'connection-status status-offline';
+                document.getElementById('camera-status').textContent = '❌ Cameras: All Failed';
+            }
+        }
+
+        // RGB Control
+        function setRGB(mode) {
+            if (!rgbWorking) {
+                alert('RGB controls not available');
+                return;
+            }
+            
+            fetch(`http://192.168.50.108:8080/rgb/${mode}`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log('RGB set:', data);
+                    // Update button states
+                    document.querySelectorAll('[onclick^="setRGB"]').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    event.target.classList.add('active');
+                })
+                .catch(error => {
+                    console.error('RGB Error:', error);
+                    event.target.classList.add('error');
+                });
+        }
+
+        // Display Control
+        function setDisplay(screen) {
+            fetch(`http://192.168.50.108:8080/display/${screen}`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Display set:', data);
+                    // Update button states
+                    document.querySelectorAll('[onclick^="setDisplay"]').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    event.target.classList.add('active');
+                })
+                .catch(error => {
+                    console.error('Display Error:', error);
+                    event.target.classList.add('error');
+                });
+        }
+
+        // Refresh all cameras
+        function refreshAllCameras() {
+            [0, 2, 4].forEach(cameraIndex => {
+                const img = document.getElementById(`camera${cameraIndex}`);
+                const statusElement = document.getElementById(`camera${cameraIndex}-status`);
+                
+                statusElement.className = 'connection-status status-testing';
+                statusElement.textContent = '🔄 Camera ' + cameraIndex + ': Refreshing...';
+                
+                img.src = img.src.split('?')[0] + '?t=' + new Date().getTime();
+            });
+        }
+
+        // Test RGB sequence
+        function testRGBSequence() {
+            if (!rgbWorking) {
+                alert('RGB controls not available');
+                return;
+            }
+            
+            const modes = ['gecko', 'rainbow', 'blue', 'green', 'red', 'off'];
+            modes.forEach((mode, index) => {
+                setTimeout(() => setRGB(mode), index * 1000);
+            });
+        }
+
+        // Check system status
+        function checkSystemStatus() {
+            testPi5Connection();
+            refreshAllCameras();
+        }
+
+        // Auto-refresh images every 10 seconds (more stable)
+        setInterval(function() {
+            if (Object.values(cameraStatus).some(status => status)) {
+                refreshAllCameras();
+            }
+        }, 10000);
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            testPi5Connection();
+            
+            // Set initial RGB and display
+            setTimeout(() => {
+                if (rgbWorking) {
+                    setRGB('gecko');
+                }
+                setDisplay('system');
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
