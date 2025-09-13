@@ -1,0 +1,78 @@
+# Compiled binaries
+*.o
+*.exe
+*.out
+*.a
+*.so
+*.dylib
+
+# Debug files
+*.dSYM/
+*.dSYM
+core
+core.*
+
+# Temporary files
+*.tmp
+*.temp
+*~
+*.swp
+*.swo
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log files
+*.log
+logs/
+
+# Test output
+test_output/
+test_results/
+
+# Backup files
+*.bak
+*.backup
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+
+# Python cache (if using Python for some assignments)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Java files (if using Java)
+*.class
+*.jar
+
+# Makefile generated files
+*.d
+
+# Valgrind output
+valgrind.out
+*.vgcore
+
+# GDB core dumps
+core.*
+
+# System specific
+*.pid
+*.sock
+
+# Assignment specific
+submission/
+handin/
