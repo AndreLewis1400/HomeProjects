@@ -2,6 +2,11 @@
 
 This repository contains all organized coursework, assignments, and projects for my studies at Florida International University (FIU).
 
+## 🌐 **GitHub Repository**
+- **Repository**: [AndreLewis1400/HomeProjects](https://github.com/AndreLewis1400/HomeProjects)
+- **Status**: Organized and ready for GitHub push
+- **Setup Guide**: See `GITHUB_SETUP_GUIDE.md` for detailed instructions
+
 ## Repository Structure
 
 ```
@@ -31,6 +36,7 @@ FIU_Coursework/
 - **[COP3530 Data Structures](Classes/COP3530_Data_Structures/)** - COP3530: Data Structures (FIU) - Arrays, linked lists, stacks, queues, trees, and algorithms
 - **[COP4338 Systems Programming](Classes/COP4338_Systems_Programming/)** - COP4338: Systems Programming (FIU) - C programming, system calls, file I/O, and low-level programming
 - **[COP4610 Operating Systems](Classes/COP4610_Operating_Systems/)** - COP4610: Operating Systems (FIU) - Process management, memory management, file systems, synchronization, and IPC
+  - **Current Assignment**: [Parallel Forking Assignment](Classes/COP4610_Operating_Systems/Assignments/Parallel_Forking_Assignment/) - Complete C program demonstrating `fork()`, IPC with pipes, and parallel execution
 
 ### FIU Academic Organization Benefits
 - **Centralized**: All FIU classes organized under one `Classes` directory
