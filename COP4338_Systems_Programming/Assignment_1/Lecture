@@ -1,0 +1,16 @@
+Node Definition:
+A struct node is defined to represent each element in the linked list, containing an integer value and a pointer to the next node.
+
+Utility Functions:
+
+to_str(node* head): Converts a linked list into a human-readable string (e.g., "1 -> 2 -> 3"), making it easy to print the list's contents.
+construct_list(int arr[], int len): Builds a linked list from an array of integers, dynamically allocating memory for each node.
+reverse(node** list_pointer): Reverses a linked list in-place by rearranging the next pointers.
+
+Main Function:
+
+Demonstrates manual creation of a short linked list (1 -> 2 -> 3 -> 4).
+Shows how to build a longer list from an array.
+Prints the lists using to_str.
+Reverses the longer list and prints the result.
+
