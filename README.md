@@ -1,195 +1,84 @@
-# COP4610 Operating Systems
+# FIU Academic Coursework Repository
 
-This repository contains coursework, assignments, and projects for COP4610: Operating Systems at FIU.
-
-## Course Overview
-
-COP4610 covers fundamental concepts of operating systems, including:
-- Process management and scheduling
-- Memory management and virtual memory
-- File systems and storage
-- Input/Output systems
-- Inter-process communication
-- Synchronization and deadlocks
-- Security and protection
+This repository contains all organized coursework, assignments, and projects for my studies at Florida International University (FIU).
 
 ## Repository Structure
 
 ```
-COP4610_Operating_Systems/
-├── Assignments/           # Programming assignments and homework
-├── Labs/                  # Laboratory exercises and hands-on work
-├── Projects/              # Major projects and implementations
-├── Notes/                 # Class notes and study materials
-├── Resources/             # Reference materials and documentation
-├── Code_Examples/         # Example code and demonstrations
+FIU_Coursework/
+├── Classes/               # All organized FIU class materials
+│   ├── CAP4770_Data_Mining/      # CAP4770 - Data Mining (FIU)
+│   ├── COP3350_Programming_1/    # COP3350 - Programming 1 (FIU)
+│   ├── COP3530_Data_Structures/  # COP3530 - Data Structures (FIU)
+│   ├── COP4338_Systems_Programming/ # COP4338 - Systems Programming (FIU)
+│   ├── COP4610_Operating_Systems/  # COP4610 - Operating Systems (FIU)
+│   │   ├── Assignments/   # Programming assignments and homework
+│   │   ├── Labs/          # Laboratory exercises and hands-on work
+│   │   ├── Projects/      # Major projects and implementations
+│   │   ├── Code_Examples/ # Example code and demonstrations
+│   │   ├── Notes/         # Class notes and study materials
+│   │   └── Resources/     # Reference materials and documentation
+│   ├── FIU_Quick_Reference.md    # FIU resources and policies
+│   └── [Future_FIU_Classes]/     # Additional FIU classes as needed
 └── README.md             # This file
 ```
 
-## Assignments
+## Quick Navigation
 
-### Assignment 1: Process Management
-- **Description**: Implementation of process creation, scheduling, and management
-- **Language**: C/C++
-- **Topics**: Fork, exec, wait, process states, scheduling algorithms
+### Current FIU Classes
+- **[CAP4770 Data Mining](Classes/CAP4770_Data_Mining/)** - CAP4770: Data Mining (FIU) - Data analysis, machine learning, visualization, and mining techniques
+- **[COP3350 Programming 1](Classes/COP3350_Programming_1/)** - COP3350: Programming 1 (FIU) - Java programming fundamentals, OOP concepts, and basic algorithms
+- **[COP3530 Data Structures](Classes/COP3530_Data_Structures/)** - COP3530: Data Structures (FIU) - Arrays, linked lists, stacks, queues, trees, and algorithms
+- **[COP4338 Systems Programming](Classes/COP4338_Systems_Programming/)** - COP4338: Systems Programming (FIU) - C programming, system calls, file I/O, and low-level programming
+- **[COP4610 Operating Systems](Classes/COP4610_Operating_Systems/)** - COP4610: Operating Systems (FIU) - Process management, memory management, file systems, synchronization, and IPC
 
-### Assignment 2: Memory Management
-- **Description**: Virtual memory simulation and page replacement algorithms
-- **Language**: C/C++
-- **Topics**: Paging, segmentation, page faults, LRU, FIFO algorithms
+### FIU Academic Organization Benefits
+- **Centralized**: All FIU classes organized under one `Classes` directory
+- **Consistent**: Each FIU class follows the same organizational structure
+- **Scalable**: Easy to add new FIU classes and maintain organization
+- **FIU-Ready**: Structure designed for FIU's academic requirements and grading standards
 
-### Assignment 3: File Systems
-- **Description**: Simple file system implementation
-- **Language**: C/C++
-- **Topics**: File operations, directory structures, disk management
+## Getting Started
 
-### Assignment 4: Synchronization
-- **Description**: Producer-consumer problem and synchronization primitives
-- **Language**: C/C++ with POSIX threads
-- **Topics**: Mutexes, semaphores, condition variables, deadlock prevention
+1. **Navigate to a specific class**: `cd Classes/COP4610_Operating_Systems/`
+2. **Browse assignments**: `cd Assignments/` to see all programming assignments
+3. **Review labs**: `cd Labs/` for hands-on exercises
+4. **Check projects**: `cd Projects/` for major implementations
+5. **Study examples**: `cd Code_Examples/` for working code demonstrations
 
-## Labs
+## Development Setup
 
-### Lab 1: System Calls and Process Creation
-- **Objective**: Learn system calls for process management
-- **Tools**: Linux command line, gcc, gdb
-- **Exercises**: Process creation, signal handling, process monitoring
-
-### Lab 2: Memory Management
-- **Objective**: Understand memory allocation and management
-- **Tools**: valgrind, memory profilers
-- **Exercises**: Dynamic allocation, memory leaks, virtual memory
-
-### Lab 3: File I/O and System Programming
-- **Objective**: File operations and system programming
-- **Tools**: Linux system calls, file descriptors
-- **Exercises**: File reading/writing, directory operations, permissions
-
-### Lab 4: Inter-Process Communication
-- **Objective**: IPC mechanisms and synchronization
-- **Tools**: Pipes, shared memory, message queues
-- **Exercises**: Process communication, data sharing, synchronization
-
-## Projects
-
-### Project 1: Shell Implementation
-- **Description**: Custom shell with job control and piping
-- **Language**: C
-- **Features**: Command parsing, process execution, job control, redirection
-
-### Project 2: Thread Pool Implementation
-- **Description**: Multi-threaded server with thread pool
-- **Language**: C with POSIX threads
-- **Features**: Thread management, task queuing, load balancing
-
-### Project 3: File System Simulator
-- **Description**: Simulation of a simple file system
-- **Language**: C/C++
-- **Features**: File operations, directory management, disk simulation
-
-## Key Learning Outcomes
-
-- **Process Management**: Understanding of process lifecycle, scheduling, and context switching
-- **Memory Management**: Virtual memory concepts, paging, and memory allocation
-- **File Systems**: File operations, directory structures, and storage management
-- **Synchronization**: Thread safety, deadlock prevention, and IPC mechanisms
-- **System Programming**: Low-level programming with system calls and kernel interfaces
-
-## Development Environment
-
-### Required Tools
-- **Compiler**: GCC (GNU Compiler Collection)
-- **Debugger**: GDB (GNU Debugger)
-- **Memory Tools**: Valgrind for memory leak detection
-- **System Monitoring**: top, htop, ps, strace
+- **Language**: C/C++ (primary)
+- **Compiler**: GCC with C99/C++11 standard
+- **Platform**: Linux/Unix environment
+- **Tools**: GDB, valgrind, make
 - **Version Control**: Git
 
-### Compilation Commands
-```bash
-# Basic compilation
-gcc -o program program.c
+## Adding New FIU Classes
 
-# With debugging symbols
-gcc -g -o program program.c
+When you start a new FIU class, follow this pattern:
+1. Create a new directory: `Classes/COURSE_CODE_Class_Name/` (e.g., `Classes/COP3530_Data_Structures/`)
+2. Use the standard FIU structure: Assignments/, Labs/, Projects/, Code_Examples/, Notes/, Resources/
+3. Add a README.md file explaining the class content and FIU course information
+4. Update this main README.md to include the new FIU class
 
-# With threading support
-gcc -pthread -o program program.c
+## Benefits of This FIU Organization
 
-# With optimization
-gcc -O2 -o program program.c
-```
+- **Centralized Access**: All your FIU classes are organized in one place
+- **Consistent Structure**: Each FIU class follows the same organizational pattern
+- **Easy Navigation**: Clear directory structure with comprehensive README files
+- **Scalable Design**: Easy to add new FIU classes as you progress through your degree
+- **FIU Academic Standards**: Structure designed to meet FIU's academic requirements
+- **Professional Organization**: Clean, maintainable structure for FIU coursework
 
-### Debugging Commands
-```bash
-# Run with GDB
-gdb ./program
+## Next Steps
 
-# Memory leak detection
-valgrind --leak-check=full ./program
-
-# System call tracing
-strace ./program
-```
-
-## Resources
-
-### Textbooks
-- "Operating System Concepts" by Silberschatz, Galvin, and Gagne
-- "Advanced Programming in the UNIX Environment" by Stevens and Rago
-
-### Online Resources
-- [Linux System Programming](https://man7.org/tlpi/)
-- [POSIX Threads Programming](https://computing.llnl.gov/tutorials/pthreads/)
-- [GNU C Library Documentation](https://www.gnu.org/software/libc/manual/)
-
-### Useful Commands
-```bash
-# Process management
-ps aux                    # List all processes
-top                       # Real-time process monitor
-kill -9 <pid>            # Force kill process
-
-# Memory information
-free -h                   # Memory usage
-cat /proc/meminfo        # Detailed memory info
-
-# File system
-df -h                     # Disk usage
-du -sh *                 # Directory sizes
-ls -la                    # Detailed file listing
-
-# System information
-uname -a                  # System information
-cat /proc/version        # Kernel version
-```
-
-## Best Practices
-
-### Code Organization
-- Use meaningful variable and function names
-- Add comprehensive comments
-- Follow consistent indentation and formatting
-- Implement proper error handling
-
-### Testing and Debugging
-- Test with various input scenarios
-- Use debugging tools (GDB, Valgrind)
-- Implement logging for troubleshooting
-- Handle edge cases and error conditions
-
-### Documentation
-- Document all functions and their parameters
-- Include usage examples
-- Maintain README files for each project
-- Keep notes on system behavior and observations
-
-## Submission Guidelines
-
-1. **Code Quality**: Clean, well-commented, and properly formatted code
-2. **Documentation**: Include README files with build and run instructions
-3. **Testing**: Demonstrate that your code works with provided test cases
-4. **Git Usage**: Use meaningful commit messages and proper branching
+1. **Explore your organized FIU materials**: Navigate through the `Classes/` directory
+2. **Add new FIU classes**: When you start new FIU courses, follow the established pattern
+3. **Maintain organization**: Keep your FIU materials organized as you add new content
+4. **Use the documentation**: Refer to README files for guidance and instructions
+5. **Follow FIU guidelines**: Ensure all work meets FIU's academic standards
 
 ---
 
-For questions or issues, refer to the course materials or contact the instructor.
+*This repository is organized to support your FIU academic success and make it easy to find and manage all your coursework at Florida International University.*
