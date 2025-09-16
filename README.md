@@ -32,6 +32,8 @@ FIU_Coursework/
 
 ### Current FIU Classes
 - **[CAP4770 Data Mining](Classes/CAP4770_Data_Mining/)** - CAP4770: Data Mining (FIU) - Data analysis, machine learning, visualization, and mining techniques
+- **[CEN4010 Software Engineering](Classes/CEN4010_Software_Engineering/)** - CEN4010: Software Engineering (FIU) - Software requirements, UML modeling, project management, and software architecture
+  - **Current Project**: [MenuMap Project](Classes/CEN4010_Software_Engineering/Projects/MenuMap_Project/) - Requirements Document, UML Design, and Presentation
 - **[COP3350 Programming 1](Classes/COP3350_Programming_1/)** - COP3350: Programming 1 (FIU) - Java programming fundamentals, OOP concepts, and basic algorithms
 - **[COP3530 Data Structures](Classes/COP3530_Data_Structures/)** - COP3530: Data Structures (FIU) - Arrays, linked lists, stacks, queues, trees, and algorithms
 - **[COP4338 Systems Programming](Classes/COP4338_Systems_Programming/)** - COP4338: Systems Programming (FIU) - C programming, system calls, file I/O, and low-level programming
