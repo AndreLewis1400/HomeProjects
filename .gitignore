@@ -1,0 +1,126 @@
+# Compiled binaries
+*.o
+*.exe
+*.out
+*.a
+*.so
+*.dylib
+
+# Debug files
+*.dSYM/
+*.dSYM
+core
+core.*
+
+# Temporary files
+*.tmp
+*.temp
+*~
+*.swp
+*.swo
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log files
+*.log
+logs/
+
+# Test output
+test_output/
+test_results/
+
+# Backup files
+*.bak
+*.backup
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+
+# Python cache (if using Python for some assignments)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Java files (if using Java)
+*.class
+*.jar
+
+# Makefile generated files
+*.d
+
+# Valgrind output
+valgrind.out
+*.vgcore
+
+# GDB core dumps
+core.*
+
+# System specific
+*.pid
+*.sock
+
+# Assignment specific
+submission/
+handin/
+
+# C/C++ specific
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.dll
+*.exe
+*.app
+
+# Build directories
+build/
+bin/
+obj/
+Debug/
+Release/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Academic specific
+*.pdf
+*.docx
+*.doc
+*.pptx
+*.ppt
+grades/
+feedback/
+
+# Personal notes (uncomment if you want to exclude personal notes)
+# personal_notes/
+# private/
+
+# FIU Academic specific
+fiu_credentials/
+student_id/
+*.fiu
+canvas_downloads/
+blackboard_downloads/
+
+# FIU Lab specific
+lab_credentials/
+fiu_lab_files/
+*.lab

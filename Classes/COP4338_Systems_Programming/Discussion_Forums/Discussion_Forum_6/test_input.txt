@@ -1,0 +1,10 @@
+Zebra
+apple
+Banana
+cat
+Dog
+elephant
+Fish
+giraffe
+Horse
+iguana 
