@@ -1,0 +1,41 @@
+Date,Car Model,Price,Quantity,Salesperson
+2023-09-01,Toyota Camry,25000,5,John Smith
+2023-09-01,Honda Civic,22000,3,Sarah Johnson
+2023-09-02,Ford Mustang,35000,2,Michael Brown
+2023-09-02,Toyota Corolla,23000,4,Emily Davis
+2023-09-03,Chevrolet Silverado,40000,3,David Wilson
+2023-09-03,Honda Accord,27000,6,Laura Martinez
+2023-09-04,Jeep Wrangler,33000,2,Robert Anderson
+2023-09-04,Subaru Outback,28000,5,Elizabeth Lee
+2023-09-05,Nissan Altima,24000,4,William White
+2023-09-05,Hyundai Sonata,23000,3,Amy Harris
+2023-09-06,Kia Sportage,26000,2,Daniel Clark
+2023-09-06,Subaru Impreza,22000,3,Megan Adams
+2023-09-07,Ford Escape,28000,4,James Turner
+2023-09-07,Honda CR-V,29000,3,Olivia Moore
+2023-09-08,Toyota Highlander,35000,2,Joseph Wright
+2023-09-08,Honda Fit,21000,4,Emma Parker
+2023-09-09,Jeep Grand Cherokee,38000,2,William Davis
+2023-09-09,Hyundai Elantra,22000,3,Sophia Lewis
+2023-09-10,Nissan Rogue,27000,3,Michael Harris
+2023-09-10,Toyota RAV4,29000,2,Grace Hall
+2023-09-11,Subaru Forester,26000,2,Liam Turner
+2023-09-11,Honda Odyssey,32000,2,Chloe Adams
+2023-09-12,Ford F-150,40000,2,Aiden Davis
+2023-09-12,Toyota Camry,25000,3,Olivia Parker
+2023-09-13,Hyundai Sonata,23000,4,Lucas Smith
+2023-09-13,Jeep Wrangler,33000,3,Lily Martinez
+2023-09-14,Nissan Altima,24000,3,Noah Wilson
+2023-09-14,Chevrolet Silverado,40000,2,Isabella Anderson
+2023-09-15,Honda Civic,22000,2,Ethan Lee
+2023-09-15,Toyota Corolla,23000,3,Amelia White
+2023-09-16,Ford Mustang,35000,2,Liam Turner
+2023-09-16,Jeep Cherokee,29000,2,Chloe Adams
+2023-09-17,Honda Accord,27000,2,Aiden Davis
+2023-09-17,Subaru Outback,28000,2,Olivia Parker
+2023-09-18,Toyota Camry,25000,2,Lucas Smith
+2023-09-18,Nissan Altima,24000,2,Lily Martinez
+2023-09-19,Hyundai Sonata,23000,2,Noah Wilson
+2023-09-19,Ford Escape,28000,2,Isabella Anderson
+2023-09-20,Jeep Grand Cherokee,38000,2,Ethan Lee
+2023-09-20,Honda CR-V,29000,2,Amelia White
