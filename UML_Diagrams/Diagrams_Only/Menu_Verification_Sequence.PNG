@@ -1,0 +1,4 @@
+# Placeholder for Menu Verification Sequence Diagram
+# This file should contain the PNG export of the Menu Verification Process sequence diagram
+# Required for: TM901 - Menu Verification use case
+# Shows interaction between User, WebInterface, VerificationSystem, and Database
