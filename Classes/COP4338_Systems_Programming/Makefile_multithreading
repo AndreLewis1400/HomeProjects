@@ -1,0 +1,38 @@
+CC = gcc
+CFLAGS = -Wall -Wextra -std=c99 -pthread -w
+
+# Target programs
+TARGETS = bank bank_fixed
+
+# Default target
+all: $(TARGETS)
+
+# Compile original version (with race conditions)
+bank: bank.c
+	$(CC) $(CFLAGS) -o bank bank.c
+
+# Compile fixed version (with mutex locks)
+bank_fixed: main_fixed.c
+	$(CC) $(CFLAGS) -o bank_fixed main_fixed.c
+
+# Clean target
+clean:
+	rm -f $(TARGETS) *.o
+
+# Test target
+test: all
+	@echo "Testing race condition version..."
+	@echo "Running ./bank 5 times:"
+	@for i in {1..5}; do ./bank; done
+	@echo ""
+	@echo "Running ./bank 100 5 times:"
+	@for i in {1..5}; do ./bank 100; done
+	@echo ""
+	@echo "Testing fixed version with mutex..."
+	@echo "Running ./bank_fixed 5 times:"
+	@for i in {1..5}; do ./bank_fixed; done
+	@echo ""
+	@echo "Running ./bank_fixed 100 5 times:"
+	@for i in {1..5}; do ./bank_fixed 100; done
+
+.PHONY: all clean test 
