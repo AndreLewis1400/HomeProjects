@@ -1,0 +1,4 @@
+# Placeholder for Spam Detection Sequence Diagram
+# This file should contain the PNG export of the Spam Detection Process sequence diagram
+# Required for: TM902 - Spam Protection use case
+# Shows interaction between User, WebInterface, SpamProtection, and Database
