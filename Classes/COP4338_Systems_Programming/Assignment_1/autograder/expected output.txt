@@ -1,0 +1,53 @@
+
+
+			****************************
+
+-./01pa1:
+	--Test Case #0:
+STDIN:[
+aaaaaa
+mnop
+ponmmnop
+hophophop
+
+]
+CLAs:[./01pa1 ]
+STDOUT:[
+singleton
+balanced tripartite
+balanced bipartite
+palindrome
+
+arithmetic
+
+palindrome
+
+balanced tripartite
+
+
+]
+	--Test Case #1:
+STDIN:[
+qqqq
+racecar
+apple
+laptoplaptop
+rrrrr
+
+]
+CLAs:[./01pa1 ]
+STDOUT:[
+singleton
+balanced bipartite
+palindrome
+
+palindrome
+
+
+balanced bipartite
+
+singleton
+palindrome
+
+
+]

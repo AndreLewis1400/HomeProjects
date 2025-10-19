@@ -1,0 +1,4 @@
+cloudia.txt
+oakley.txt
+precipitation.csv
+squeaky.txt
