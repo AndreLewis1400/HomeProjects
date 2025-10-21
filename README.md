@@ -1,61 +1,64 @@
-<<<<<<< HEAD
-# FIU Computer Science Projects
+# FIU Coursework Assignments
 
-This repository contains programming assignments and projects from various Computer Science courses at FIU.
+This repository contains assignments and projects for FIU computer science courses.
 
-## Courses
+## 📚 **Assignments**
 
-### CAP4770 Data Mining
-This course covers fundamental concepts and techniques in data mining, including:
-- Data preprocessing and cleaning
-- Feature selection and engineering
-- Classification and clustering
-- Pattern recognition
-- Predictive modeling
+### **CEN4010 - Software Engineering**
+- **[MenuMap Project](Classes/CEN4010_Software_Engineering/Projects/MenuMap_Project/)** - Restaurant discovery application
+  - 3 Use Cases (2 normal + 1 security)
+  - UML Diagrams (Use Case, Class, Sequence)
+  - Software Requirements Document
 
-#### Projects & Materials
-- [`CAP4770_Data_Mining/`](CAP4770_Data_Mining/)
-  - Assignments: Data mining assignments and CRISP-DM documentation
-  - [Data Cleaning](CAP4770_Data_Mining/Data_Cleaning): Data preprocessing and cleaning
-  - [Data Transformation & Feature Engineering](CAP4770_Data_Mining/Data%20Transformation%20%26%20Feature%20Engineering): Feature engineering notebook
-  - [Regression Model Evaluation Reflection](CAP4770_Data_Mining/regression_model_evaluation_reflection-2.ipynb): Reflection and analysis of regression model evaluation metrics and results
+### **COP4610 - Operating Systems**
+- **[Parallel Forking Assignment](Classes/COP4610_Operating_Systems/Assignments/Parallel_Forking_Assignment/)** - Process creation with fork()
+  - C program demonstrating parallel execution
+  - IPC with pipes
+  - Performance measurement
 
-### COP3350 Programming 1
-This course introduces programming fundamentals in Java, including:
-- Object-oriented programming
-- Data structures
-- Recursion
-- Interfaces and polymorphism
+### **COP4338 - Systems Programming**
+- **[Bucket Sort Assignment](Classes/COP4338_Systems_Programming/ag-bucketsort/)** - Sorting algorithm implementation
+- **[File I/O Converter](Classes/COP4338_Systems_Programming/csv_to_txt_converter.c)** - File format conversion
+- **[Bank Simulation](Classes/COP4338_Systems_Programming/bank.c)** - Multi-threaded banking system
 
-#### Projects & Materials
-- [`COP3350_Programing_1/`](COP3350_Programing_1/)
-  - Assignments on recursion, interfaces, polymorphism, and more
-  - Example folders: `Assignment_5_Interfaces`, `Assignment_Vlll_Recursion`, `Polymorphism`, etc.
+### **COP3530 - Data Structures**
+- **[Java Data Structures](Classes/COP3530_DataStructures/src/)** - Various data structure implementations
+  - Arrays, Linked Lists, Stacks, Queues
+  - Trees, Graphs, Hash Tables
+  - Sorting and searching algorithms
 
-### COP3530 Data Structures
-This course covers:
-- Arrays, stacks, queues, linked lists
-- Trees, graphs, sorting, and searching algorithms
+### **COP3350 - Programming 1**
+- **[Java Assignments](Classes/COP3350_Programing_1/)** - Object-oriented programming
+  - Polymorphism examples
+  - Interface implementations
+  - Recursion exercises
 
-#### Projects & Materials
-- [`COP3530_DataStructures/`](COP3530_DataStructures/)
-  - Source code for data structures and algorithms
-  - Assignments: Hash tables, binary search trees, stacks, graphs, sorting (see `src/` subfolders)
+### **CAP4770 - Data Mining**
+- **[Data Analysis Projects](Classes/CAP4770_Data_Mining/)** - Machine learning and data visualization
+  - Regression analysis
+  - Decision trees
+  - Data cleaning and transformation
 
-### COP4338 Systems Programming
-This course covers systems programming concepts and implementations in C, including:
-- Memory management
-- Process control
-- File I/O
-- System calls
-- Inter-process communication
+## 📁 **Repository Structure**
 
-#### Projects & Materials
-- [`COP4338_Systems_Programming/Assignment_1`](COP4338_Systems_Programming/Assignment_1): Pattern Checker program and related files
+```
+Classes/
+├── CEN4010_Software_Engineering/    # Software Engineering projects
+├── COP4610_Operating_Systems/       # OS assignments and labs
+├── COP4338_Systems_Programming/     # Systems programming in C
+├── COP3530_Data_Structures/         # Data structures in Java
+├── COP3350_Programming_1/           # Java programming fundamentals
+└── CAP4770_Data_Mining/             # Data mining and ML projects
+```
+
+## 🔧 **Technologies Used**
+
+- **Languages**: C, C++, Java, Python
+- **Tools**: GCC, GDB, Valgrind, Make
+- **UML**: Eclipse Papyrus
+- **Version Control**: Git
+- **Platforms**: Linux, macOS
 
 ---
 
-For more details, see the README files in each course subfolder.
-=======
-# HomeProjects
->>>>>>> 9aa957b (Add COP4338 assignment submission with comments and README)
+*FIU Computer Science coursework and assignments*
