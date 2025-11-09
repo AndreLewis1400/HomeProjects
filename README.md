@@ -11,15 +11,28 @@ This repository contains assignments and projects for FIU computer science cours
   - Software Requirements Document
 
 ### **COP4610 - Operating Systems**
+- **[Assignment 3: Critical Section Problem](Classes/COP4610_Operating_Systems/Assignments/COP4610_Assignment3/)** - Banking system with pthreads and mutex
+  - Multi-threaded deposit and withdrawal operations
+  - Mutex synchronization for thread safety
+  - Bonus tracking system
+- **[Assignment 4: Banker's Algorithm](Classes/COP4610_Operating_Systems/Assignments/COP4610_Assignment4/)** - Deadlock avoidance algorithm
+  - Resource allocation management
+  - Safety algorithm implementation
+  - Request and release operations
 - **[Parallel Forking Assignment](Classes/COP4610_Operating_Systems/Assignments/Parallel_Forking_Assignment/)** - Process creation with fork()
   - C program demonstrating parallel execution
   - IPC with pipes
   - Performance measurement
+- **[CPU Scheduling Assignment](Classes/COP4610_Operating_Systems/Assignments/CPU_Scheduling_Assignment/)** - CPU scheduling algorithms
 
 ### **COP4338 - Systems Programming**
-- **[Bucket Sort Assignment](Classes/COP4338_Systems_Programming/ag-bucketsort/)** - Sorting algorithm implementation
-- **[File I/O Converter](Classes/COP4338_Systems_Programming/csv_to_txt_converter.c)** - File format conversion
+- **[Assignment 1: Pattern Finder](Classes/COP4338_Systems_Programming/Assignment_1/)** - Pattern matching implementation
+- **[Assignment 2: Rail Cipher](Classes/COP4338_Systems_Programming/Assignment_1/Assignment_2/)** - Encryption/decryption with rail fence cipher
+- **[Programming Assignment 3: Bucket Sort](Classes/COP4338_Systems_Programming/Programming_Assignment_3/)** - Sorting algorithm implementation
+- **[Programming Assignment 4: Word Puzzle](Classes/COP4338_Systems_Programming/Programming_Assignment_4/)** - Word puzzle solver with performance analysis
 - **[Bank Simulation](Classes/COP4338_Systems_Programming/bank.c)** - Multi-threaded banking system
+- **[File I/O Converter](Classes/COP4338_Systems_Programming/csv_to_txt_converter.c)** - File format conversion
+- **[Discussion Forums](Classes/COP4338_Systems_Programming/Discussion_Forums/)** - Various discussion forum solutions
 
 ### **COP3530 - Data Structures**
 - **[Java Data Structures](Classes/COP3530_DataStructures/src/)** - Various data structure implementations
