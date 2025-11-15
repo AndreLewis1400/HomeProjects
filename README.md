@@ -19,6 +19,11 @@ This repository contains assignments and projects for FIU computer science cours
   - Resource allocation management
   - Safety algorithm implementation
   - Request and release operations
+- **[Distributed Memory Machines and Programming](Classes/COP4610_Operating_Systems/Assignments/Distributed_Memory_Machines/)** - Distributed memory programming and parallel computing
+  - Distributed memory architecture implementation
+  - Message passing and communication patterns
+  - Parallel algorithm design
+  - Process coordination and synchronization in distributed systems
 - **[Parallel Forking Assignment](Classes/COP4610_Operating_Systems/Assignments/Parallel_Forking_Assignment/)** - Process creation with fork()
   - C program demonstrating parallel execution
   - IPC with pipes
