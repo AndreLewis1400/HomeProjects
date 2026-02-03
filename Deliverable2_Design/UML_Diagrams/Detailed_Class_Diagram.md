@@ -7,13 +7,13 @@
 
 ---
 
-## 🏗️ Detailed Class Diagram Overview
+## Detailed Class Diagram Overview
 
 This document defines the comprehensive class diagram for the MenuMap application, showing the detailed class structure within each layer and subsystem. The diagram follows the layered architecture pattern with clear separation of concerns and well-defined class relationships.
 
 ---
 
-## 📋 Class Structure by Layer
+## Class Structure by Layer
 
 ### **Presentation Layer Classes**
 
@@ -587,7 +587,7 @@ This document defines the comprehensive class diagram for the MenuMap applicatio
 
 ---
 
-## 🔗 Class Relationships
+## Class Relationships
 
 ### **Inheritance Relationships**
 ```
@@ -647,7 +647,7 @@ This document defines the comprehensive class diagram for the MenuMap applicatio
 
 ---
 
-## 📊 Design Patterns Implementation
+## Design Patterns Implementation
 
 ### **Observer Pattern**
 ```
@@ -690,7 +690,7 @@ This document defines the comprehensive class diagram for the MenuMap applicatio
 
 ---
 
-## 🎯 Class Diagram Benefits
+## Class Diagram Benefits
 
 ### **Maintainability**
 - Clear separation of concerns

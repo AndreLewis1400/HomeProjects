@@ -7,7 +7,7 @@
 
 ---
 
-## 🎯 **Opening Hook (30 seconds)**
+## **Opening Hook (30 seconds)**
 
 ### **"Imagine you're a chef in a busy restaurant..."**
 - You're cooking one dish, but suddenly you need to make 4 different dishes at the same time
@@ -17,7 +17,7 @@
 
 ---
 
-## 🍽️ **The Restaurant Analogy (1-2 minutes)**
+## **The Restaurant Analogy (1-2 minutes)**
 
 ### **The Original Chef (Parent Process)**
 - You start as one chef (one process)
@@ -41,7 +41,7 @@
 
 ---
 
-## 💻 **Real Code Example (2-3 minutes)**
+## **Real Code Example (2-3 minutes)**
 
 ### **Simple Fork Example**
 ```c
@@ -80,7 +80,7 @@ int main() {
 
 ---
 
-## 🏗️ **Building Something Cool (2-3 minutes)**
+## **Building Something Cool (2-3 minutes)**
 
 ### **Let's Make 4 Workers!**
 ```c
@@ -111,7 +111,7 @@ for (int i = 0; i < 4; i++) {
 
 ---
 
-## 🔄 **The Fork() Process Step-by-Step (1-2 minutes)**
+## **The Fork() Process Step-by-Step (1-2 minutes)**
 
 ### **Step 1: Before Fork**
 - One process exists
@@ -136,7 +136,7 @@ for (int i = 0; i < 4; i++) {
 
 ---
 
-## 🎭 **Common Misconceptions (1 minute)**
+## **Common Misconceptions (1 minute)**
 
 ### **"Fork() creates a new program"**
 - **WRONG!** Fork() creates a copy of the current process
@@ -155,7 +155,7 @@ for (int i = 0; i < 4; i++) {
 
 ---
 
-## 🚀 **Why Fork() is Amazing (1 minute)**
+## **Why Fork() is Amazing (1 minute)**
 
 ### **Parallel Processing**
 - Multiple processes can work simultaneously
@@ -173,7 +173,7 @@ for (int i = 0; i < 4; i++) {
 
 ---
 
-## 🎬 **Live Demo (1-2 minutes)**
+## **Live Demo (1-2 minutes)**
 
 ### **Show Your Code Running**
 ```bash
@@ -200,7 +200,7 @@ I can do different work now!
 
 ---
 
-## 🎯 **Closing Summary (30 seconds)**
+## **Closing Summary (30 seconds)**
 
 ### **Key Takeaways**
 - **Fork() creates an exact copy** of the current process
@@ -217,7 +217,7 @@ I can do different work now!
 
 ---
 
-## 🎤 **Video Recording Tips**
+## **Video Recording Tips**
 
 ### **Speaking Style**
 - **Conversational**: Talk like you're explaining to a friend
@@ -239,7 +239,7 @@ I can do different work now!
 
 ---
 
-## 📝 **Script Notes**
+## **Script Notes**
 
 ### **Opening (30 seconds)**
 "Hi everyone! Today I'm going to explain fork() in operating systems. Imagine you're a chef who needs to make 4 different dishes at the same time..."

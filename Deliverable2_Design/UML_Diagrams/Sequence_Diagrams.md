@@ -9,13 +9,13 @@
 
 ---
 
-## 📊 Sequence Diagram Overview
+## Sequence Diagram Overview
 
 This document contains sequence diagrams for all 7 use cases selected for implementation in Deliverable 2. Each sequence diagram shows the detailed interaction flow between actors and system objects.
 
 ---
 
-## 🍽️ UC-001: Browse Restaurant Menus - Sequence Diagram
+## UC-001: Browse Restaurant Menus - Sequence Diagram
 
 ### **Actors & Objects:**
 - **User** (Primary Actor)
@@ -55,7 +55,7 @@ WebInterface -> User: 14. display menu
 
 ---
 
-## ⭐ UC-002: Manage Favorites - Sequence Diagram
+## UC-002: Manage Favorites - Sequence Diagram
 
 ### **Actors & Objects:**
 - **User** (Primary Actor)
@@ -98,7 +98,7 @@ WebInterface -> User: 16. display "Added to favorites"
 
 ---
 
-## 🔒 UC-003: Secure Password Reset - Sequence Diagram
+## UC-003: Secure Password Reset - Sequence Diagram
 
 ### **Actors & Objects:**
 - **User** (Primary Actor)
@@ -153,7 +153,7 @@ WebInterface -> User: 23. display "Password reset successful"
 
 ---
 
-## 👤 UC-004: User Registration & Login - Sequence Diagram
+## UC-004: User Registration & Login - Sequence Diagram
 
 ### **Actors & Objects:**
 - **User** (Primary Actor)
@@ -199,7 +199,7 @@ WebInterface -> User: 24. display dashboard
 
 ---
 
-## ✅ UC-005: Menu Verification System - Sequence Diagram
+## UC-005: Menu Verification System - Sequence Diagram
 
 ### **Actors & Objects:**
 - **Restaurant Owner** (Primary Actor)
@@ -242,7 +242,7 @@ WebInterface -> Administrator: 23. display "Status updated"
 
 ---
 
-## 🛡️ UC-006: Spam Protection System - Sequence Diagram
+## UC-006: Spam Protection System - Sequence Diagram
 
 ### **Actors & Objects:**
 - **User** (Primary Actor)
@@ -289,7 +289,7 @@ WebInterface -> Administrator: 21. display "Action completed"
 
 ---
 
-## 🏪 UC-007: Restaurant Owner Menu Management - Sequence Diagram
+## UC-007: Restaurant Owner Menu Management - Sequence Diagram
 
 ### **Actors & Objects:**
 - **Restaurant Owner** (Primary Actor)
@@ -340,7 +340,7 @@ WebInterface -> Restaurant Owner: 30. display "Item deleted"
 
 ---
 
-## 📋 Sequence Diagram Summary
+## Sequence Diagram Summary
 
 | Use Case | Primary Actor | Key Control Objects | Key Entity Objects | Complexity |
 |----------|---------------|-------------------|-------------------|------------|
@@ -354,7 +354,7 @@ WebInterface -> Restaurant Owner: 30. display "Item deleted"
 
 ---
 
-## 🎯 Implementation Notes
+## Implementation Notes
 
 ### **Common Patterns:**
 1. **Authentication Flow**: Most use cases start with session validation

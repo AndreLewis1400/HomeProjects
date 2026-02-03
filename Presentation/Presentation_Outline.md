@@ -9,7 +9,7 @@
 
 ---
 
-## 🎯 **Presentation Structure (10-15 minutes)**
+## Presentation Structure (10-15 minutes)
 
 ### **Slide 1: Title Slide**
 - **Title**: MenuMap Application
@@ -120,7 +120,7 @@
 
 ---
 
-## 🎤 **Speaking Notes**
+## Speaking Notes
 
 ### **Opening (2 minutes)**
 "Good morning/afternoon everyone. I'm [Your Name], and I'm the UML Diagrams Coordinator for Team 9. Today I'll be presenting our MenuMap application, a restaurant discovery and menu management system that we've developed for CEN4010 Software Engineering."
@@ -139,7 +139,7 @@
 
 ---
 
-## 📋 **Presentation Checklist**
+## Presentation Checklist
 
 ### **Before Presentation:**
 - [ ] All slides created and reviewed
@@ -163,7 +163,7 @@
 
 ---
 
-## 🎯 **Key Points to Emphasize**
+## Key Points to Emphasize
 
 1. **Three Use Cases**: We have exactly what was required - 2 normal use cases and 1 security use case
 2. **Individual Diagrams**: Each use case has its own Papyrus diagram

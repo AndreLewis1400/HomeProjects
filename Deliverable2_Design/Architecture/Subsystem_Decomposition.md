@@ -7,13 +7,13 @@
 
 ---
 
-## 🏗️ Subsystem Decomposition Overview
+## Subsystem Decomposition Overview
 
 This document provides detailed specifications for each of the 7 major subsystems in the MenuMap application. Each subsystem is designed to handle specific functional areas while maintaining clear separation of concerns and loose coupling.
 
 ---
 
-## 📦 Subsystem 1: Presentation Layer
+## Subsystem 1: Presentation Layer
 
 ### **Purpose**
 Handles all user interface components and user interactions across web and mobile platforms.
@@ -60,7 +60,7 @@ Presentation Layer
 
 ---
 
-## 📦 Subsystem 2: Business Logic Layer
+## Subsystem 2: Business Logic Layer
 
 ### **Purpose**
 Contains core business rules, application logic, and orchestrates use case execution.
@@ -104,7 +104,7 @@ Business Logic Layer
 
 ---
 
-## 📦 Subsystem 3: Data Access Layer
+## Subsystem 3: Data Access Layer
 
 ### **Purpose**
 Manages data persistence, retrieval, and database operations.
@@ -150,7 +150,7 @@ Data Access Layer
 
 ---
 
-## 📦 Subsystem 4: Security Subsystem
+## Subsystem 4: Security Subsystem
 
 ### **Purpose**
 Handles authentication, authorization, and all security-related functionality.
@@ -198,7 +198,7 @@ Security Subsystem
 
 ---
 
-## 📦 Subsystem 5: Menu Management Subsystem
+## Subsystem 5: Menu Management Subsystem
 
 ### **Purpose**
 Manages restaurant and menu data, including browsing, search, and verification.
@@ -246,7 +246,7 @@ Menu Management Subsystem
 
 ---
 
-## 📦 Subsystem 6: User Management Subsystem
+## Subsystem 6: User Management Subsystem
 
 ### **Purpose**
 Handles user accounts, profiles, preferences, and favorites management.
@@ -294,7 +294,7 @@ User Management Subsystem
 
 ---
 
-## 📦 Subsystem 7: Notification Subsystem
+## Subsystem 7: Notification Subsystem
 
 ### **Purpose**
 Handles all types of notifications including email, SMS, and in-app notifications.
@@ -344,7 +344,7 @@ Notification Subsystem
 
 ---
 
-## 🔗 Subsystem Interactions
+## Subsystem Interactions
 
 ### **Primary Data Flow**
 ```
@@ -367,7 +367,7 @@ User Request → Presentation Layer → Business Logic Layer → Data Access Lay
 
 ---
 
-## 📊 Subsystem Metrics
+## Subsystem Metrics
 
 ### **Performance Requirements**
 - **Presentation Layer**: < 200ms response time for UI updates
@@ -387,7 +387,7 @@ User Request → Presentation Layer → Business Logic Layer → Data Access Lay
 
 ---
 
-## 🔒 Security Considerations
+## Security Considerations
 
 ### **Authentication & Authorization**
 - Multi-factor authentication support
@@ -409,7 +409,7 @@ User Request → Presentation Layer → Business Logic Layer → Data Access Lay
 
 ---
 
-## 🎯 Quality Attributes
+## Quality Attributes
 
 ### **Reliability**
 - 99.9% uptime target

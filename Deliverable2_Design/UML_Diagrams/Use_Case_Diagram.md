@@ -7,13 +7,13 @@
 
 ---
 
-## 🎯 Use Case Diagram Overview
+## Use Case Diagram Overview
 
 This document defines the comprehensive use case diagram for the MenuMap application, covering all 7 selected use cases for implementation. The use cases are categorized into Normal Use Cases and Security Use Cases, with detailed actor definitions and relationships.
 
 ---
 
-## 👥 Actors Definition
+## Actors Definition
 
 ### **Primary Actors**
 ```
@@ -72,7 +72,7 @@ External Systems:
 
 ---
 
-## 📋 Use Cases Specification
+## Use Cases Specification
 
 ### **UC-001: Browse Restaurant Menus**
 ```
@@ -374,7 +374,7 @@ Exceptions:
 
 ---
 
-## 🔗 Use Case Relationships
+## Use Case Relationships
 
 ### **Include Relationships**
 ```
@@ -461,7 +461,7 @@ Use Case Generalizations:
 
 ---
 
-## 📊 Use Case Priority Matrix
+## Use Case Priority Matrix
 
 ### **Priority Classification**
 ```
@@ -501,7 +501,7 @@ Phase 3 (Security Features):
 
 ---
 
-## 🎯 Use Case Success Criteria
+## Use Case Success Criteria
 
 ### **Functional Requirements**
 ```

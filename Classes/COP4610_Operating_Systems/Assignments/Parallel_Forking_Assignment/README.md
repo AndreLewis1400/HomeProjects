@@ -74,16 +74,16 @@ The program implements 4 unique computational tasks:
 
 ## Grading Rubric Alignment
 
-✅ **Compiles successfully**  
-✅ **Creates exactly n children (1-4)**  
-✅ **Each child performs unique task**  
-✅ **Children don't print (parent only)**  
-✅ **IPC method chosen and explained**  
-✅ **Error handling implemented**  
-✅ **Process diagram provided**  
-✅ **Timing discussion included**  
-✅ **Live demo recorded**  
-✅ **Peer review completed**
+**Compiles successfully**  
+**Creates exactly n children (1-4)**  
+**Each child performs unique task**  
+**Children don't print (parent only)**  
+**IPC method chosen and explained**  
+**Error handling implemented**  
+**Process diagram provided**  
+**Timing discussion included**  
+**Live demo recorded**  
+**Peer review completed**
 
 ## Submission Checklist
 

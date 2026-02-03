@@ -137,11 +137,11 @@ This runs the complete experiment as specified in the assignment:
 
 ## Assignment Requirements
 
-1. ✅ **Compile with pthread**: `gcc -o bank bank.c -pthread -w`
-2. ✅ **Run experiments**: Test with different thread counts
-3. ✅ **Record results**: Document corrupted vs. correct balances
-4. ✅ **Implement mutex solution**: Add locks to prevent race conditions
-5. ✅ **Compare results**: Show before/after with mutex locks
-6. ✅ **Share findings**: Discuss with classmates
+1. **Compile with pthread**: `gcc -o bank bank.c -pthread -w`
+2. **Run experiments**: Test with different thread counts
+3. **Record results**: Document corrupted vs. correct balances
+4. **Implement mutex solution**: Add locks to prevent race conditions
+5. **Compare results**: Show before/after with mutex locks
+6. **Share findings**: Discuss with classmates
 
 This implementation demonstrates the fundamental concepts of multithreading, race conditions, and synchronization in systems programming. 

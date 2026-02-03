@@ -136,7 +136,6 @@ Project_X/
 - **README**: Clear setup and usage instructions
 - **Design Document**: System architecture and design decisions
 - **API Documentation**: Function and interface documentation
-- **User Guide**: How to use the system
 
 ## Development Tools
 
@@ -215,7 +214,7 @@ int main() {
 ### Submission Requirements
 1. **Source Code**: All source files with proper organization
 2. **Build Instructions**: Clear setup and build procedures
-3. **Documentation**: Comprehensive documentation and user guides
+3. **Documentation**: Comprehensive documentation
 4. **Test Results**: Evidence of testing and validation
 5. **Demo**: Working demonstration of the system
 

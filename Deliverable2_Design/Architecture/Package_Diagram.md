@@ -7,13 +7,13 @@
 
 ---
 
-## 🏗️ Package Diagram Overview
+## Package Diagram Overview
 
 The MenuMap application follows a **Layered Architecture** pattern with **MVC** as the secondary pattern. The system is decomposed into major subsystems that handle specific functional areas.
 
 ---
 
-## 📦 Major Subsystems (Packages)
+## Major Subsystems (Packages)
 
 ### **1. Presentation Layer**
 - **Purpose**: Handles user interface and user interactions
@@ -73,7 +73,7 @@ The MenuMap application follows a **Layered Architecture** pattern with **MVC** 
 
 ---
 
-## 🔗 Package Dependencies
+## Package Dependencies
 
 ```
 Presentation Layer
@@ -103,7 +103,7 @@ Business Logic Layer
 
 ---
 
-## 📋 Use Case Mapping to Subsystems
+## Use Case Mapping to Subsystems
 
 ### **UC-001: Browse Restaurant Menus**
 - **Primary**: Menu Management Subsystem
@@ -135,7 +135,7 @@ Business Logic Layer
 
 ---
 
-## 🎯 Architectural Benefits
+## Architectural Benefits
 
 ### **Layered Architecture Benefits:**
 1. **Separation of Concerns**: Each layer has distinct responsibilities
@@ -151,7 +151,7 @@ Business Logic Layer
 
 ---
 
-## 🔒 Security Considerations
+## Security Considerations
 
 - **Authentication**: Handled by Security Subsystem
 - **Authorization**: Role-based access control

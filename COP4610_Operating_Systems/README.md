@@ -63,12 +63,12 @@ gcc -pthread banking_system.c -o banking_system
 ### Video Discussion Requirements
 
 This implementation addresses all rubric requirements:
-- ✅ Correct use of pthreads (8 pts)
-- ✅ Deposit logic with bonus tracking (10 pts)
-- ✅ Withdrawal logic (10 pts)
-- ✅ Mutex synchronization (10 pts)
-- ✅ Critical section structure (10 pts)
-- ✅ Bonus tracking accuracy (5 pts)
+- Correct use of pthreads (8 pts)
+- Deposit logic with bonus tracking (10 pts)
+- Withdrawal logic (10 pts)
+- Mutex synchronization (10 pts)
+- Critical section structure (10 pts)
+- Bonus tracking accuracy (5 pts)
 
 ### Author
 

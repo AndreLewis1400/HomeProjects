@@ -1,8 +1,8 @@
 # CEN4010 MenuMap Project Submission Checklist
 
-## 📋 Pre-Submission Checklist
+## Pre-Submission Checklist
 
-### ✅ Requirements Document
+### Requirements Document
 - [ ] **Software Requirements Document (SRD)** completed
   - [ ] All sections filled out (Introduction, Overall Description, System Features, etc.)
   - [ ] Use cases properly documented (TM901, TM902, Password Reset, etc.)
@@ -11,7 +11,7 @@
   - [ ] Document formatted professionally
   - [ ] Team information and version included
 
-### ✅ Eclipse Papyrus UML Project
+### Eclipse Papyrus UML Project
 - [ ] **Papyrus project created** in Eclipse
 - [ ] **Use Case Diagram** completed
   - [ ] All actors identified (User, Restaurant Owner, Administrator)
@@ -35,7 +35,7 @@
   - [ ] Interfaces and dependencies shown
 - [ ] **Export diagrams** as PNG/PDF for documentation
 
-### ✅ Presentation
+### Presentation
 - [ ] **Presentation slides** created
 - [ ] **Project overview** included
 - [ ] **Requirements summary** presented
@@ -44,7 +44,7 @@
 - [ ] **System architecture** discussed
 - [ ] **Team roles** and contributions highlighted
 
-### ✅ Final Submission Package
+### Final Submission Package
 - [ ] **Zipped file** containing:
   - [ ] Requirements Document (PDF or Word)
   - [ ] Eclipse Papyrus UML Project (entire project folder)
@@ -53,7 +53,7 @@
 - [ ] **Submission deadline** met
 - [ ] **Team leader** submits on behalf of team
 
-## 🎯 Rubric Alignment
+## Rubric Alignment
 
 ### Software Requirements (2 pts - Full Marks)
 - [ ] Comprehensive requirements specification created
@@ -68,7 +68,7 @@
 - [ ] **System Features**: Menu browsing, search, verification
 - [ ] **Non-functional**: Performance, security, usability requirements
 
-## 📁 File Organization
+## File Organization
 ```
 MenuMap_Project_Submission.zip
 ├── Requirements_Document/
@@ -79,14 +79,14 @@ MenuMap_Project_Submission.zip
     └── MenuMap_Presentation.pptx
 ```
 
-## 🚀 Next Steps
+## Next Steps
 1. **Complete UML diagrams** in Eclipse Papyrus
 2. **Export all diagrams** for documentation
 3. **Create presentation** covering all project aspects
 4. **Package everything** into zipped submission
 5. **Submit before deadline** as team leader
 
-## 📞 Team Coordination
+## Team Coordination
 - **Andre Lewis**: Document Editor & Diagram Coordinator
 - **Team Members**: [List other team members and their roles]
 - **Communication**: [Specify team communication method]
