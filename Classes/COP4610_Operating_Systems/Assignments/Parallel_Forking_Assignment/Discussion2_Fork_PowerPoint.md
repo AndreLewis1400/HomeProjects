@@ -7,7 +7,7 @@
 
 ---
 
-## 🎨 **Design Guidelines**
+## **Design Guidelines**
 - **Font**: Arial or Calibri, 24pt minimum for body text
 - **Colors**: Dark text on light background, consistent color scheme
 - **Layout**: Keep it simple, don't overcrowd slides
@@ -16,7 +16,7 @@
 
 ---
 
-## 📺 **Slide 1: Title Slide**
+## **Slide 1: Title Slide**
 **Title**: Understanding fork() in Operating Systems
 **Subtitle**: Process Creation Made Simple
 **Your Name**: [Your Name]
@@ -31,7 +31,7 @@
 
 ---
 
-## 🍽️ **Slide 2: The Restaurant Analogy**
+## **Slide 2: The Restaurant Analogy**
 **Title**: Imagine You're a Chef...
 **Content**:
 - You're cooking one dish
@@ -46,7 +46,7 @@
 
 ---
 
-## 🔄 **Slide 3: What is fork()?**
+## **Slide 3: What is fork()?**
 **Title**: fork() = Process Cloning
 **Content**:
 - **Creates an exact copy** of the current process
@@ -61,7 +61,7 @@
 
 ---
 
-## 💻 **Slide 4: Simple Code Example**
+## **Slide 4: Simple Code Example**
 **Title**: Let's See It in Action
 **Content**:
 ```c
@@ -90,7 +90,7 @@ int main() {
 
 ---
 
-## 🎭 **Slide 5: The Return Value Magic**
+## **Slide 5: The Return Value Magic**
 **Title**: How Do They Know Who's Who?
 **Content**:
 - **Parent process**: Gets child's PID (positive number)
@@ -105,7 +105,7 @@ int main() {
 
 ---
 
-## 🏗️ **Slide 6: Creating Multiple Workers**
+## **Slide 6: Creating Multiple Workers**
 **Title**: Let's Make 4 Workers!
 **Content**:
 ```c
@@ -128,7 +128,7 @@ for (int i = 0; i < 4; i++) {
 
 ---
 
-## 🔄 **Slide 7: The Fork() Process Step-by-Step**
+## **Slide 7: The Fork() Process Step-by-Step**
 **Title**: What Happens When You Call fork()?
 **Content**:
 1. **Before**: One process exists
@@ -144,13 +144,13 @@ for (int i = 0; i < 4; i++) {
 
 ---
 
-## 🎭 **Slide 8: Common Misconceptions**
+## **Slide 8: Common Misconceptions**
 **Title**: What fork() is NOT
 **Content**:
 - ❌ **NOT** creating a new program
 - ❌ **NOT** creating a new thread
 - ❌ **NOT** the same as exec()
-- ✅ **IS** creating a copy of the current process
+- **IS** creating a copy of the current process
 
 **Visual Elements**:
 - Clear X marks for misconceptions
@@ -159,7 +159,7 @@ for (int i = 0; i < 4; i++) {
 
 ---
 
-## 🚀 **Slide 9: Why fork() is Amazing**
+## **Slide 9: Why fork() is Amazing**
 **Title**: The Power of Parallel Processing
 **Content**:
 - **Speed**: Multiple processes = faster execution
@@ -175,7 +175,7 @@ for (int i = 0; i < 4; i++) {
 
 ---
 
-## 🎬 **Slide 10: Live Demo**
+## **Slide 10: Live Demo**
 **Title**: Let's See It Run!
 **Content**:
 - **Compile**: `gcc -o fork_demo fork_demo.c`
@@ -190,7 +190,7 @@ for (int i = 0; i < 4; i++) {
 
 ---
 
-## 🎯 **Slide 11: Real-World Applications**
+## **Slide 11: Real-World Applications**
 **Title**: Where You'll See fork() in Action
 **Content**:
 - **Web servers**: Handle multiple requests
@@ -205,7 +205,7 @@ for (int i = 0; i < 4; i++) {
 
 ---
 
-## 🎉 **Slide 12: Key Takeaways**
+## **Slide 12: Key Takeaways**
 **Title**: What We Learned
 **Content**:
 - **fork() creates an exact copy** of the current process
@@ -221,7 +221,7 @@ for (int i = 0; i < 4; i++) {
 
 ---
 
-## 🎤 **Slide 13: Thank You!**
+## **Slide 13: Thank You!**
 **Title**: Questions?
 **Content**:
 - **fork()** = Process cloning made simple
@@ -235,7 +235,7 @@ for (int i = 0; i < 4; i++) {
 
 ---
 
-## 🎬 **Video Recording Tips**
+## **Video Recording Tips**
 
 ### **Slide Transitions**
 - **Smooth**: Use simple fade or slide transitions
@@ -263,7 +263,7 @@ for (int i = 0; i < 4; i++) {
 
 ---
 
-## 📝 **Script Notes**
+## **Script Notes**
 
 ### **Opening (30 seconds)**
 "Hi everyone! Today I'm going to explain fork() in operating systems. Imagine you're a chef who needs to make 4 different dishes at the same time..."
@@ -280,21 +280,21 @@ for (int i = 0; i < 4; i++) {
 
 ---
 
-## 🎯 **Success Criteria**
+## **Success Criteria**
 
 ### **Content Requirements**
-- ✅ Explain fork() clearly and simply
-- ✅ Use analogies and examples
-- ✅ Show code examples
-- ✅ Demonstrate understanding
-- ✅ Keep it engaging and conversational
+- Explain fork() clearly and simply
+- Use analogies and examples
+- Show code examples
+- Demonstrate understanding
+- Keep it engaging and conversational
 
 ### **Technical Requirements**
-- ✅ 5-10 minutes long
-- ✅ Clear audio and video
-- ✅ Good lighting and visibility
-- ✅ Professional presentation
-- ✅ Uploaded by due date
+- 5-10 minutes long
+- Clear audio and video
+- Good lighting and visibility
+- Professional presentation
+- Uploaded by due date
 
 ---
 

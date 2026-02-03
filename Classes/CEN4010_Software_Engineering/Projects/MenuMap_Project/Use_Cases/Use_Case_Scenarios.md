@@ -10,13 +10,13 @@
 
 ---
 
-## 📋 Scenarios Overview
+## Scenarios Overview
 
 This document contains detailed scenarios for each of the three use cases in the MenuMap application. Each scenario demonstrates a specific user journey through the system.
 
 ---
 
-## 🍽️ UC-001: Browse Restaurant Menus - Scenarios
+## UC-001: Browse Restaurant Menus - Scenarios
 
 ### **Scenario 1: User Searches for Italian Restaurants**
 
@@ -84,7 +84,7 @@ This document contains detailed scenarios for each of the three use cases in the
 
 ---
 
-## ⭐ UC-002: Manage Favorites - Scenarios
+## UC-002: Manage Favorites - Scenarios
 
 ### **Scenario 1: User Adds Restaurant to Favorites**
 
@@ -96,7 +96,7 @@ This document contains detailed scenarios for each of the three use cases in the
 1. David opens MenuMap and logs into his account
 2. He searches for "Tony's Pizza" (his favorite place)
 3. System displays Tony's Pizza with menu and details
-4. David sees a "❤️ Add to Favorites" button
+4. David sees an "Add to Favorites" button
 5. He taps the heart button
 6. System shows "Added to Favorites!" confirmation message
 7. David navigates to "My Favorites" section
@@ -142,7 +142,7 @@ This document contains detailed scenarios for each of the three use cases in the
 3. Alex finds "Quinoa Power Bowl - $14.99" in the menu
 4. He taps on the menu item to see details
 5. System shows full description: "Quinoa, kale, chickpeas, avocado, tahini dressing"
-6. Alex sees a "⭐ Add to Favorites" button
+6. Alex sees an "Add to Favorites" button
 7. He taps the star button
 8. System asks "Which category?" and shows options
 9. Alex selects "Healthy Meals" category
@@ -152,7 +152,7 @@ This document contains detailed scenarios for each of the three use cases in the
 
 ---
 
-## 🔒 UC-003: Secure Password Reset - Scenarios
+## UC-003: Secure Password Reset - Scenarios
 
 ### **Scenario 1: User Forgets Password and Resets Successfully**
 
@@ -228,7 +228,7 @@ This document contains detailed scenarios for each of the three use cases in the
 
 ---
 
-## 📊 **Scenario Summary**
+## **Scenario Summary**
 
 | Use Case | Scenario | Actor | Key Learning |
 |----------|----------|-------|--------------|

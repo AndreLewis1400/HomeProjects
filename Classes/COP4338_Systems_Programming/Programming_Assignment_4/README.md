@@ -129,14 +129,14 @@ echo "hello world programming assignment" | ./wordpuzzle -verbose -len 5,6,7,8,9
 
 The program meets all assignment requirements:
 
-- ✅ **Executable Name**: `wordpuzzle`
-- ✅ **Command-line Options**: All 5 options implemented
-- ✅ **Multi-threading**: Proper thread creation and management
-- ✅ **Binary Search**: Uses provided `binsearch` function
-- ✅ **JSON Dictionary**: Works with `dictionary.json`
-- ✅ **Makefile**: Proper build configuration
-- ✅ **Thread Safety**: Mutex protection for shared resources
-- ✅ **Memory Management**: Proper allocation and cleanup
+- **Executable Name**: `wordpuzzle`
+- **Command-line Options**: All 5 options implemented
+- **Multi-threading**: Proper thread creation and management
+- **Binary Search**: Uses provided `binsearch` function
+- **JSON Dictionary**: Works with `dictionary.json`
+- **Makefile**: Proper build configuration
+- **Thread Safety**: Mutex protection for shared resources
+- **Memory Management**: Proper allocation and cleanup
 
 ## Extra Credit
 

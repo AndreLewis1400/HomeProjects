@@ -8,7 +8,7 @@
 
 ---
 
-## 🎤 **Opening (2 minutes)**
+## **Opening (2 minutes)**
 
 ### **Introduction**
 "Good morning/afternoon everyone. I'm Andre Lewis, and I'm the UML Diagrams Coordinator for Team 9. Today I'll be presenting our MenuMap application, a restaurant discovery and menu management system that we've developed for CEN4010 Software Engineering."
@@ -18,7 +18,7 @@
 
 ---
 
-## 🍽️ **Use Cases Section (5 minutes)**
+## **Use Cases Section (5 minutes)**
 
 ### **Slide 5: UC-001 - Browse Restaurant Menus**
 
@@ -66,7 +66,7 @@
 
 ---
 
-## 📊 **UML Diagrams Section (3 minutes)**
+## **UML Diagrams Section (3 minutes)**
 
 ### **Slide 9: UML Diagrams Overview**
 
@@ -88,7 +88,7 @@
 
 ---
 
-## 🎯 **Key Achievements (2 minutes)**
+## **Key Achievements (2 minutes)**
 
 ### **What We Delivered:**
 - "We have exactly what was required: 2 normal use cases and 1 security use case"
@@ -104,7 +104,7 @@
 
 ---
 
-## 🏁 **Closing (1 minute)**
+## **Closing (1 minute)**
 
 ### **Summary:**
 "In conclusion, our MenuMap application demonstrates a comprehensive understanding of software engineering principles. We have three well-defined use cases with detailed scenarios, complete UML documentation using Papyrus, and a security-focused approach that addresses real-world concerns."
@@ -117,7 +117,7 @@
 
 ---
 
-## 📋 **Presentation Tips**
+## **Presentation Tips**
 
 ### **Delivery:**
 - Speak clearly and confidently
@@ -143,7 +143,7 @@
 
 ---
 
-## 🎤 **Practice Points**
+## **Practice Points**
 
 ### **Before the Presentation:**
 - Practice each section out loud

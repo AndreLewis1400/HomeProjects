@@ -2,6 +2,13 @@
 
 A multi-threaded C program that finds meaningful English words of specified lengths within a randomly generated string.
 
+## Assignment Overview
+
+**Course**: COP4338 Systems Programming  
+**Assignment**: Programming Assignment 4  
+**Due Date**: August 1, 2025  
+**Points**: 100 + 10 extra credit
+
 ## Features
 
 - **Multi-threading**: Distributes workload across multiple threads for improved performance
@@ -25,8 +32,9 @@ A multi-threaded C program that finds meaningful English words of specified leng
 
 - `wordpuzzle.c` - Main program source code
 - `randomgen.c` - Random string generator for testing
-- `Makefile` - Build configuration
+- `Makefile` - Build configuration (creates `wordpuzzle` executable)
 - `README.md` - This documentation
+- `test_performance.sh` - Performance testing script for extra credit
 - `Downloads/dictionary.json` - Dictionary file (1.6MB, ~93K words)
 
 ## Building
@@ -146,6 +154,13 @@ For the performance plot (10 extra points):
 2. Create Excel/Google Sheets with data
 3. Generate plot with regression line
 4. Save as JPG file
+
+```bash
+# Run performance testing script
+./test_performance.sh
+```
+
+This will create `performance_data.txt` with timing data for different thread counts (1, 2, 4, 8, 16, 32, 64, 90).
 
 ## Troubleshooting
 

@@ -10,7 +10,7 @@
 
 ---
 
-## 📋 Use Case Overview
+## Use Case Overview
 
 This document contains three detailed use cases for the MenuMap application as required for the CEN4010 Software Engineering course:
 
@@ -22,7 +22,7 @@ Each use case includes detailed descriptions, actors, preconditions, main flow, 
 
 ---
 
-## 🍽️ UC-001: Browse Restaurant Menus
+## UC-001: Browse Restaurant Menus
 
 ### Use Case Information
 - **Use Case ID**: UC-001
@@ -98,7 +98,7 @@ This use case describes how a user browses and searches for restaurant menus wit
 
 ---
 
-## ⭐ UC-002: Manage Favorites
+## UC-002: Manage Favorites
 
 ### Use Case Information
 - **Use Case ID**: UC-002
@@ -188,7 +188,7 @@ This use case describes how a registered user manages their favorite restaurants
 
 ---
 
-## 🔒 UC-003: Secure Password Reset
+## UC-003: Secure Password Reset
 
 ### Use Case Information
 - **Use Case ID**: UC-003
@@ -320,7 +320,7 @@ This use case describes the secure password reset functionality that prevents un
 
 ---
 
-## 📊 Use Case Summary
+## Use Case Summary
 
 | Use Case ID | Name | Type | Priority | Complexity | Security Level |
 |-------------|------|------|----------|------------|----------------|
@@ -330,7 +330,7 @@ This use case describes the secure password reset functionality that prevents un
 
 ---
 
-## 🔗 Related Documentation
+## Related Documentation
 
 - **Software Requirements Document (SRD)**: Detailed functional and non-functional requirements
 - **UML Diagrams**: Visual representations of use cases and system interactions

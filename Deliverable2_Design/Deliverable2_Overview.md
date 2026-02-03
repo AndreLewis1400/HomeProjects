@@ -9,13 +9,13 @@
 
 ---
 
-## 🎯 Deliverable 2 Overview
+## Deliverable 2 Overview
 
 This document outlines the design phase for the MenuMap application, focusing on software architecture, detailed design, and UML modeling for the 7 use cases selected for implementation.
 
 ---
 
-## 📋 7 Use Cases Selected for Implementation
+## 7 Use Cases Selected for Implementation
 
 Based on the deliverable 2 requirements, we will implement the following 7 use cases:
 
@@ -32,7 +32,7 @@ Based on the deliverable 2 requirements, we will implement the following 7 use c
 
 ---
 
-## 🏗️ Architectural Patterns Selected
+## Architectural Patterns Selected
 
 ### **Primary Pattern: Layered Architecture**
 **Reasons for Selection:**
@@ -50,7 +50,7 @@ Based on the deliverable 2 requirements, we will implement the following 7 use c
 
 ---
 
-## 📊 Deliverable 2 Structure
+## Deliverable 2 Structure
 
 ```
 Deliverable2_Design/
@@ -78,7 +78,7 @@ Deliverable2_Design/
 
 ---
 
-## 🎯 Next Steps
+## Next Steps
 
 1. **Create Package Diagram** - Define major subsystems
 2. **Design Subsystem Decomposition** - Detail each subsystem

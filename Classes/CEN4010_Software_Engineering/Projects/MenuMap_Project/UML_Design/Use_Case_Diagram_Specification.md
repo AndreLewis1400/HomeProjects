@@ -2,7 +2,7 @@
 
 ## Diagram Elements to Create in Papyrus
 
-### 🎭 **Actors**
+### **Actors**
 1. **User** (Primary Actor)
    - Stick figure icon
    - Label: "User"
@@ -18,7 +18,7 @@
    - Label: "Administrator"
    - Description: "System administrator, content manager"
 
-### 📋 **Use Cases**
+### **Use Cases**
 1. **Browse Menus**
    - Oval shape
    - Label: "Browse Menus"
@@ -64,7 +64,7 @@
    - Label: "User Login"
    - Description: "Authenticate user access"
 
-### 🔗 **Relationships**
+### **Relationships**
 
 #### **User Relationships:**
 - User → Browse Menus (Association)
@@ -92,7 +92,7 @@
 #### **Extend Relationships:**
 - Password Reset → User Login (Extend)
 
-## 📐 **Layout Suggestions**
+## **Layout Suggestions**
 ```
 [User] ←→ [Browse Menus] ←→ [Search Restaurants]
    ↓           ↓
@@ -104,7 +104,7 @@
 [Administrator] → [TM902 - Spam Protection]
 ```
 
-## 🎨 **Visual Guidelines**
+## **Visual Guidelines**
 - **Actors**: Place on left and right sides
 - **Use Cases**: Arrange in center area
 - **Primary Use Cases**: Larger, more prominent

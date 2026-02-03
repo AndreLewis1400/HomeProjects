@@ -106,18 +106,18 @@ Time quantum: 2
 ### Assignment Requirements
 
 #### Code Requirements:
-- ✅ Implement all three algorithms
-- ✅ Calculate performance metrics
-- ✅ Compare algorithm performance
-- ✅ Handle edge cases (no processes, single process)
-- ✅ Clear, commented code
+- Implement all three algorithms
+- Calculate performance metrics
+- Compare algorithm performance
+- Handle edge cases (no processes, single process)
+- Clear, commented code
 
 #### Deliverables:
-- ✅ Working C program that compiles on Ocelot
-- ✅ Video explanation of code
-- ✅ Resources used during development
-- ✅ Performance analysis and reflection
-- ✅ Peer feedback
+- Working C program that compiles on Ocelot
+- Video explanation of code
+- Resources used during development
+- Performance analysis and reflection
+- Peer feedback
 
 ### Testing on Ocelot
 

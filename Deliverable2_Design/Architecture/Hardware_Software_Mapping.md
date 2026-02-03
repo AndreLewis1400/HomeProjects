@@ -7,13 +7,13 @@
 
 ---
 
-## 🖥️ Hardware/Software Mapping Overview
+## Hardware/Software Mapping Overview
 
 This document defines the deployment architecture, technology stack, and mapping of software components to hardware infrastructure for the MenuMap application. The system is designed for cloud-native deployment with microservices architecture.
 
 ---
 
-## 🏗️ Deployment Architecture
+## Deployment Architecture
 
 ### **Cloud Infrastructure Provider**
 - **Primary**: Amazon Web Services (AWS)
@@ -28,7 +28,7 @@ This document defines the deployment architecture, technology stack, and mapping
 
 ---
 
-## 🖥️ Hardware Infrastructure
+## Hardware Infrastructure
 
 ### **Production Environment**
 
@@ -134,7 +134,7 @@ Hardware Specifications:
 
 ---
 
-## 💻 Software Technology Stack
+## Software Technology Stack
 
 ### **Frontend Technologies**
 ```
@@ -229,7 +229,7 @@ Monitoring & Logging:
 
 ---
 
-## 🔄 Software Component Mapping
+## Software Component Mapping
 
 ### **Presentation Layer Mapping**
 ```
@@ -352,7 +352,7 @@ Real-time Service:
 
 ---
 
-## 🌐 Network Architecture
+## Network Architecture
 
 ### **Network Topology**
 ```
@@ -400,7 +400,7 @@ Security Groups:
 
 ---
 
-## 📊 Performance & Scalability
+## Performance & Scalability
 
 ### **Auto Scaling Configuration**
 ```
@@ -441,7 +441,7 @@ Database Load Balancing:
 
 ---
 
-## 🔒 Security Architecture
+## Security Architecture
 
 ### **Network Security**
 ```
@@ -479,7 +479,7 @@ Key Management:
 
 ---
 
-## 📈 Monitoring & Observability
+## Monitoring & Observability
 
 ### **Application Monitoring**
 ```
@@ -513,7 +513,7 @@ Log Analysis:
 
 ---
 
-## 🚀 Deployment Strategy
+## Deployment Strategy
 
 ### **Deployment Pipeline**
 ```

@@ -34,12 +34,12 @@ Result: Both threads started with 5, but final value is 6 instead of 7!
 ### Mutex Solution
 - **Expected**: 1,000,000
 - **Actual**: 1,000,000
-- **Result**: ✅ SUCCESS! Mutex prevented race condition
+- **Result**: SUCCESS! Mutex prevented race condition
 
 ### Semaphore Solution
 - **Expected**: 1,000,000
 - **Actual**: 991,022
-- **Result**: ⚠️ Some issues (likely due to macOS semaphore deprecation warnings)
+- **Result**: Some issues (likely due to macOS semaphore deprecation warnings)
 
 ## Solutions Implemented
 

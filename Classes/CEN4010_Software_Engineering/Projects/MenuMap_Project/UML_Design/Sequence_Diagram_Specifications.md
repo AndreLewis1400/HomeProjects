@@ -134,7 +134,7 @@ end
 WebInterface → User: Display updated favorites
 ```
 
-## 📐 **Layout Guidelines for Each Diagram:**
+## **Layout Guidelines for Each Diagram:**
 
 ### **Vertical Layout:**
 - **Actors**: Left side, stick figures

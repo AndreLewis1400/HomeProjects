@@ -7,13 +7,13 @@
 
 ---
 
-## 🏗️ Architecture Package Diagram Overview
+## Architecture Package Diagram Overview
 
 This document defines the Architecture Package Diagram for the MenuMap application, showing the high-level system structure, package relationships, and architectural patterns. The diagram follows a layered architecture with clear separation of concerns and well-defined interfaces between packages.
 
 ---
 
-## 📦 Package Structure
+## Package Structure
 
 ### **Top-Level System Package**
 ```
@@ -64,7 +64,7 @@ Dependency Hierarchy:
 
 ---
 
-## 🎯 Package Specifications
+## Package Specifications
 
 ### **1. Presentation Layer Package**
 ```
@@ -345,7 +345,7 @@ Dependencies:
 
 ---
 
-## 🔗 Package Relationships
+## Package Relationships
 
 ### **Dependency Relationships**
 ```
@@ -396,7 +396,7 @@ Package Compositions:
 
 ---
 
-## 📊 Package Metrics
+## Package Metrics
 
 ### **Package Size Metrics**
 ```
@@ -426,7 +426,7 @@ Package Coupling:
 
 ---
 
-## 🎯 Architectural Benefits
+## Architectural Benefits
 
 ### **Layered Architecture Benefits**
 ```
@@ -472,7 +472,7 @@ Testability:
 
 ---
 
-## 🔒 Security Considerations
+## Security Considerations
 
 ### **Package Security**
 ```

@@ -7,13 +7,13 @@
 
 ---
 
-## 🎯 OCL Statements Overview
+## OCL Statements Overview
 
 This document contains Object Constraint Language (OCL) statements for the MenuMap application's control objects. These statements define business rules, constraints, and invariants that ensure system integrity and proper behavior.
 
 ---
 
-## 📋 OCL Statements by Control Object
+## OCL Statements by Control Object
 
 ### **AuthenticationController**
 
@@ -392,7 +392,7 @@ post: result->forAll(m | self.cache->includes(m))
 
 ---
 
-## 🔒 Security-Related OCL Statements
+## Security-Related OCL Statements
 
 ### **Password Security Constraints**
 ```ocl
@@ -437,7 +437,7 @@ post: self.validateToken(result)
 
 ---
 
-## 📊 Business Rule OCL Statements
+## Business Rule OCL Statements
 
 ### **Menu Business Rules**
 ```ocl
@@ -480,7 +480,7 @@ inv: self.isActive implies self.menus->size() > 0
 
 ---
 
-## 🎯 OCL Statement Benefits
+## OCL Statement Benefits
 
 ### **System Integrity**
 - Ensures data consistency across all operations

@@ -10,7 +10,7 @@
 
 ---
 
-## 📊 Use Case Diagram Overview
+## Use Case Diagram Overview
 
 This document contains individual use case diagrams for each of the three required use cases:
 
@@ -22,7 +22,7 @@ Each diagram shows the actors, use case, relationships, and system boundaries.
 
 ---
 
-## 🍽️ UC-001: Browse Restaurant Menus - Use Case Diagram
+## UC-001: Browse Restaurant Menus - Use Case Diagram
 
 ### Diagram Description
 This diagram illustrates the "Browse Restaurant Menus" use case, showing how users interact with the system to search and browse restaurant menus.
@@ -40,9 +40,9 @@ graph TB
         UC1["UC-001: Browse Restaurant Menus"]
     end
     
-    User["👤 User<br/>(Food Enthusiast)"]
-    RestaurantOwner["🏪 Restaurant Owner<br/>(Data Provider)"]
-    System["💻 MenuMap System<br/>(Data Processor)"]
+    User["User<br/>(Food Enthusiast)"]
+    RestaurantOwner["Restaurant Owner<br/>(Data Provider)"]
+    System["MenuMap System<br/>(Data Processor)"]
     
     User -->|"1. Search for restaurants"| UC1
     User -->|"2. Browse menu items"| UC1
@@ -74,7 +74,7 @@ graph TB
 
 ---
 
-## ⭐ UC-002: Manage Favorites - Use Case Diagram
+## UC-002: Manage Favorites - Use Case Diagram
 
 ### Diagram Description
 This diagram illustrates the "Manage Favorites" use case, showing how registered users save, organize, and manage their favorite restaurants and menu items.
@@ -91,8 +91,8 @@ graph TB
         UC2["UC-002: Manage Favorites"]
     end
     
-    RegisteredUser["👤 Registered User<br/>(Account Holder)"]
-    System["💻 MenuMap System<br/>(Data Storage)"]
+    RegisteredUser["Registered User<br/>(Account Holder)"]
+    System["MenuMap System<br/>(Data Storage)"]
     
     RegisteredUser -->|"1. Add to favorites"| UC2
     RegisteredUser -->|"2. Remove from favorites"| UC2
@@ -125,7 +125,7 @@ graph TB
 
 ---
 
-## 🔒 UC-003: Secure Password Reset - Use Case Diagram
+## UC-003: Secure Password Reset - Use Case Diagram
 
 ### Diagram Description
 This diagram illustrates the "Secure Password Reset" use case, showing the security-focused process for resetting user passwords while preventing misuse and fraud.
@@ -143,9 +143,9 @@ graph TB
         UC3["UC-003: Secure Password Reset"]
     end
     
-    User["👤 User<br/>(Account Owner)"]
-    System["💻 MenuMap System<br/>(Security Manager)"]
-    EmailService["📧 Email Service<br/>(External Provider)"]
+    User["User<br/>(Account Owner)"]
+    System["MenuMap System<br/>(Security Manager)"]
+    EmailService["Email Service<br/>(External Provider)"]
     
     User -->|"1. Request password reset"| UC3
     User -->|"2. Enter email address"| UC3
@@ -196,7 +196,7 @@ graph TB
 
 ---
 
-## 🔄 Combined Use Case Overview
+## Combined Use Case Overview
 
 ### System-Wide Use Case Diagram
 
@@ -208,11 +208,11 @@ graph TB
         UC3["UC-003: Secure Password Reset"]
     end
     
-    User["👤 User"]
-    RegisteredUser["👤 Registered User"]
-    RestaurantOwner["🏪 Restaurant Owner"]
-    System["💻 MenuMap System"]
-    EmailService["📧 Email Service"]
+    User["User"]
+    RegisteredUser["Registered User"]
+    RestaurantOwner["Restaurant Owner"]
+    System["MenuMap System"]
+    EmailService["Email Service"]
     
     User --> UC1
     RegisteredUser --> UC2
@@ -241,7 +241,7 @@ graph TB
 
 ---
 
-## 📋 Diagram Summary
+## Diagram Summary
 
 | Use Case | Type | Primary Actor | Key Relationships | Security Level |
 |----------|------|---------------|-------------------|----------------|
@@ -251,7 +251,7 @@ graph TB
 
 ---
 
-## 🎯 Key Design Principles
+## Key Design Principles
 
 ### Normal Use Cases (UC-001, UC-002)
 - **User-Centric Design**: Focus on user experience and ease of use
@@ -266,7 +266,7 @@ graph TB
 
 ---
 
-## 🔗 Related Documentation
+## Related Documentation
 
 - **Use Case Documentation**: Detailed descriptions of each use case
 - **Software Requirements Document**: Functional and non-functional requirements
