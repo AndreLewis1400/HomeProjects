@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COP4610 Banking System - Talking Points</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #2c3e50;
+            margin-top: 25px;
+        }
+        h4 {
+            color: #7f8c8d;
+            margin-top: 20px;
+        }
+        .points {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .code {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+        .highlight {
+            background-color: #f39c12;
+            color: white;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .results {
+            background-color: #e8f5e8;
+            border: 2px solid #27ae60;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .calculation {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        ul, ol {
+            margin: 10px 0;
+            padding-left: 30px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #bdc3c7;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>COP4610 Banking System Video Discussion - Complete Talking Points</h1>
+
+        <h2>Part 1: Code Implementation (48 pts total)</h2>
+
+        <h3>1. Correct Use of Threads (pthread) - 8 pts</h3>
+        <div class="points">
+            <strong>Key Lines: 37-45, 48-56</strong>
+            <ul>
+                <li><strong>Thread Creation</strong>: "Lines 37-40 show proper <span class="highlight">pthread_create()</span> for deposit thread with error checking using <span class="highlight">perror()</span> and <span class="highlight">exit(1)</span> if creation fails."</li>
+                <li><strong>Thread Management</strong>: "Lines 42-45 create the withdrawal thread with identical error handling pattern."</li>
+                <li><strong>Thread Synchronization</strong>: "Lines 48-51 and 53-56 use <span class="highlight">pthread_join()</span> to wait for both threads to complete before printing final results, preventing race conditions in output."</li>
+            </ul>
+        </div>
+
+        <h3>2. Deposit Logic (Thread A) - 10 pts</h3>
+        <div class="points">
+            <strong>Key Lines: 76, 81-84, 86-89</strong>
+            <ul>
+                <li><strong>Loop Control</strong>: "Line 76 ensures exactly 2,000,000 deposit operations as required by the assignment."</li>
+                <li><strong>Critical Updates</strong>: "Lines 81-84 perform exactly one update per critical section entry - adding $1 to account balance and incrementing deposit counter."</li>
+                <li><strong>Bonus Logic</strong>: "Lines 86-89 implement bonus tracking that awards $10 every 1000th deposit, accurately counted in <span class="highlight">bonus_count</span>."</li>
+            </ul>
+        </div>
+
+        <h3>3. Withdrawal Logic (Thread B) - 10 pts</h3>
+        <div class="points">
+            <strong>Key Lines: 108, 113-122</strong>
+            <ul>
+                <li><strong>Exact Operations</strong>: "Line 108 ensures exactly 2,000,000 withdrawal operations as specified."</li>
+                <li><strong>Balanced Withdrawals</strong>: "Lines 113-122 withdraw $1 for each deposit, plus $10 every 1000th withdrawal to account for bonus amounts, ensuring final balance approaches zero."</li>
+            </ul>
+        </div>
+
+        <h3>4. Synchronization (Mutex) - 10 pts</h3>
+        <div class="points">
+            <strong>Key Lines: 14, 137, 142</strong>
+            <ul>
+                <li><strong>Mutex Initialization</strong>: "Line 14 uses <span class="highlight">PTHREAD_MUTEX_INITIALIZER</span> for static mutex initialization."</li>
+                <li><strong>Entry Section</strong>: "Line 137 <span class="highlight">pthread_mutex_lock()</span> ensures mutual exclusion before entering critical section."</li>
+                <li><strong>Exit Section</strong>: "Line 142 <span class="highlight">pthread_mutex_unlock()</span> releases the lock, allowing other threads to enter."</li>
+            </ul>
+        </div>
+
+        <h3>5. Critical Section Structure - 10 pts</h3>
+        <div class="points">
+            <strong>Key Lines: 78, 80-90, 93, 96</strong>
+            <ul>
+                <li><strong>Entry Section</strong>: "Line 78 calls <span class="highlight">enter_critical_section()</span> to acquire mutex before critical work."</li>
+                <li><strong>Critical Section</strong>: "Lines 80-90 contain only one update per entry - deposit amount and bonus check."</li>
+                <li><strong>Exit Section</strong>: "Line 93 calls <span class="highlight">exit_critical_section()</span> to release mutex after critical work."</li>
+                <li><strong>Remainder Section</strong>: "Line 96 calls <span class="highlight">remainder_section()</span> for non-critical work that doesn't access shared data."</li>
+            </ul>
+        </div>
+
+        <h3>6. Bonus Tracking - 5 pts</h3>
+        <div class="points">
+            <strong>Key Lines: 8, 86-89, 63</strong>
+            <ul>
+                <li><strong>Global Tracking</strong>: "Line 8 declares <span class="highlight">bonus_count</span> global variable for accurate bonus counting."</li>
+                <li><strong>Bonus Logic</strong>: "Lines 86-89 check if deposit count is divisible by 1000 and award $10 bonus."</li>
+                <li><strong>Final Report</strong>: "Line 63 prints total bonuses awarded in final results."</li>
+            </ul>
+        </div>
+
+        <h2>Part 2: Video Discussion (42 pts total)</h2>
+
+        <h3>Code Design Explanation (7 pts)</h3>
+        <div class="points">
+            <ul>
+                <li><strong>Mutex vs Semaphore</strong>: "I chose mutex over semaphore because we need simple mutual exclusion. Mutex ensures only one thread accesses the critical section at a time, perfect for protecting shared account balance."</li>
+                <li><strong>Thread Responsibilities</strong>: "Thread A handles all deposit operations with bonus tracking, while Thread B handles withdrawals that account for both deposits and bonuses to achieve zero final balance."</li>
+                <li><strong>Bonus Implementation</strong>: "The bonus tracking awards $10 every 1000th deposit, and withdrawals are designed to eventually zero out the account by accounting for these bonuses."</li>
+            </ul>
+        </div>
+
+        <h3>Debugging & Resources (5 pts)</h3>
+        <div class="points">
+            <ul>
+                <li><strong>Common Issues</strong>: "I initially encountered race conditions when threads accessed shared variables without synchronization. The solution was implementing proper mutex locking around critical sections."</li>
+                <li><strong>Resources Used</strong>: "I referenced POSIX threads documentation and used online resources for understanding mutex initialization patterns and thread synchronization best practices."</li>
+            </ul>
+        </div>
+
+        <h3>Proof of Correctness (10 pts)</h3>
+        <div class="points">
+            <ul>
+                <li><strong>Mutual Exclusion</strong>: "Lines 137 and 142 ensure only one thread can be in the critical section at any time through mutex locking, preventing simultaneous access to shared variables."</li>
+                <li><strong>Progress</strong>: "The mutex implementation guarantees that when a thread exits the critical section, another waiting thread will be allowed to enter immediately, ensuring forward progress."</li>
+                <li><strong>Bounded Waiting</strong>: "Since we use a standard mutex, threads are served in a fair manner, preventing indefinite waiting and ensuring bounded waiting property."</li>
+            </ul>
+        </div>
+
+        <h3>Live Code Demo (5 pts)</h3>
+        <div class="points">
+            <ul>
+                <li><strong>Compilation</strong>: "I'll compile with <span class="highlight">make</span> which uses <span class="highlight">gcc -Wall -Wextra -std=c99 -pthread -g</span> to link the pthread library."</li>
+                <li><strong>Execution</strong>: "Running <span class="highlight">make run</span> will show concurrent operations, thread creation messages, and final results with balance near zero."</li>
+                <li><strong>Output Explanation</strong>: "The output will show 2,000,000 deposits, 2,000,000 withdrawals, and approximately 2,000 bonuses awarded."</li>
+            </ul>
+        </div>
+
+        <h2>Execution Results Explanation</h2>
+
+        <h3>Sample Output Analysis</h3>
+        <div class="code">
+=== Banking System with Critical Section Problem Solution ===
+Initial account balance: $0
+Starting concurrent banking operations...
+
+Deposit thread started
+Withdrawal thread started
+Deposit thread completed
+Withdrawal thread completed
+
+=== Final Results ===
+Final account balance: $0
+Total deposits performed: 2000000
+Total withdrawals performed: 2000000
+Total bonuses awarded: 2000
+        </div>
+
+        <h3>Results Breakdown</h3>
+
+        <h4>Initial State</h4>
+        <div class="points">
+            <strong>Starting Balance</strong>: "$0 - The account begins with no money, providing a clean baseline for our concurrent operations."
+        </div>
+
+        <h4>Thread Execution</h4>
+        <div class="points">
+            <ul>
+                <li><strong>Thread Messages</strong>: "Both 'Deposit thread started' and 'Withdrawal thread started' messages appear, showing that both threads are running concurrently."</li>
+                <li><strong>Completion Messages</strong>: "Both threads complete successfully, indicating proper synchronization and no deadlocks occurred."</li>
+            </ul>
+        </div>
+
+        <h4>Final Results Analysis</h4>
+        <div class="results">
+            <ul>
+                <li><strong>Total Deposits</strong>: "2,000,000 deposits were performed exactly as required by the assignment specification."</li>
+                <li><strong>Total Withdrawals</strong>: "2,000,000 withdrawals were performed exactly as required, matching the deposit count."</li>
+                <li><strong>Bonus Awards</strong>: "2,000 bonuses were awarded, which is correct because we award a bonus every 1000th deposit (2,000,000 ÷ 1000 = 2,000)."</li>
+                <li><strong>Final Balance</strong>: "$0 - This demonstrates the correctness of our implementation."</li>
+            </ul>
+        </div>
+
+        <h4>Mathematical Verification</h4>
+        <div class="calculation">
+            <strong>Balance Calculation:</strong>
+            <ul>
+                <li>Deposits added: 2,000,000 × $1 = $2,000,000</li>
+                <li>Bonuses added: 2,000 × $10 = $20,000</li>
+                <li><strong>Total added: $2,020,000</strong></li>
+                <li>Withdrawals removed: 2,000,000 × $1 = $2,000,000</li>
+                <li>Bonus withdrawals removed: 2,000 × $10 = $20,000</li>
+                <li><strong>Total removed: $2,020,000</strong></li>
+                <li><strong>Final balance: $2,020,000 - $2,020,000 = $0</strong></li>
+            </ul>
+        </div>
+
+        <h4>Correctness Verification</h4>
+        <div class="points">
+            <ul>
+                <li><strong>Mutual Exclusion</strong>: "The fact that we get exactly 2,000,000 deposits and 2,000,000 withdrawals with no race conditions proves mutual exclusion is working correctly."</li>
+                <li><strong>Progress</strong>: "Both threads completed successfully, demonstrating that progress is maintained and no thread was indefinitely blocked."</li>
+                <li><strong>Bounded Waiting</strong>: "The balanced final result shows that both threads had fair access to the critical section."</li>
+            </ul>
+        </div>
+
+        <h2>Compilation and Execution Commands</h2>
+
+        <h3>Build Commands</h3>
+        <div class="code">
+# Navigate to COP4610 directory
+cd COP4610_Operating_Systems
+
+# Build the program
+make
+
+# Run the program
+make run
+
+# Clean build artifacts
+make clean
+        </div>
+
+        <h3>Expected Compilation Output</h3>
+        <div class="code">
+gcc -Wall -Wextra -std=c99 -pthread -g -c banking_system.c -o banking_system.o
+gcc banking_system.o -o banking_system -pthread
+Build successful! Executable: banking_system
+        </div>
+
+        <div class="footer">
+            <p><strong>Author:</strong> Andre Lewis<br>
+            <strong>Course:</strong> COP4610 Operating Systems - FIU<br>
+            <strong>Assignment:</strong> Assignment 3 - Critical Section Problem Solution<br>
+            <strong>Date:</strong> October 2024</p>
+        </div>
+    </div>
+</body>
+</html>

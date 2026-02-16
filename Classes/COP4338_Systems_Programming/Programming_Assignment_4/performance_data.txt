@@ -1,0 +1,9 @@
+# Threads,Total_Time(ns),Binary_Search_Time(ns)
+1,,
+2,,
+4,,
+8,,
+16,,
+32,,
+64,,
+90,,
