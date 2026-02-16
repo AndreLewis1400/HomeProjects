@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # FIU Computer Science Projects
 
 This repository contains programming assignments and projects from various Computer Science courses at FIU.
@@ -19,6 +18,7 @@ This course covers fundamental concepts and techniques in data mining, including
   - [Data Cleaning](CAP4770_Data_Mining/Data_Cleaning): Data preprocessing and cleaning
   - [Data Transformation & Feature Engineering](CAP4770_Data_Mining/Data%20Transformation%20%26%20Feature%20Engineering): Feature engineering notebook
   - [Regression Model Evaluation Reflection](CAP4770_Data_Mining/regression_model_evaluation_reflection-2.ipynb): Reflection and analysis of regression model evaluation metrics and results
+  - [Association Rule Mining](CAP4770_Data_Mining/Association_Rule_Mining_Apriori_.ipynb): Apriori algorithm implementation for association rule mining
 
 ### COP3350 Programming 1
 This course introduces programming fundamentals in Java, including:
@@ -51,11 +51,30 @@ This course covers systems programming concepts and implementations in C, includ
 - Inter-process communication
 
 #### Projects & Materials
-- [`COP4338_Systems_Programming/Assignment_1`](COP4338_Systems_Programming/Assignment_1): Pattern Checker program and related files
+- [`COP4338_Systems_Programming/`](COP4338_Systems_Programming/)
+  - [Assignment_1](COP4338_Systems_Programming/Assignment_1): Pattern Checker program and related files
+  - [Programming Assignment 3](COP4338_Systems_Programming/Programming%20Assignment%203): Bucket sort implementation
+  - [Programming Assignment 4](COP4338_Systems_Programming/Programming_Assignment_4): Advanced systems programming concepts
+  - Discussion forums and additional exercises
+
+## Additional Projects
+
+### Personal Projects
+- **Gecko Monitoring Systems**: Python-based monitoring and control systems
+  - `GeckoGuardian_Integrated_Monitoring_and_Control_System.py`
+  - `Leopard_Gecko_Monitoring_System.py`
+
+### Practice Exercises
+- Various C programming exercises and examples
+- Java programming practice files
+- Data structure implementations
+
+---
+
+## Commit messages
+
+Use specific, descriptive commit messages. Avoid generic cleanup phrases such as "Remove emojis and user guides from docs"; prefer messages like "Docs: simplify README" or "Docs: update structure" when changing documentation.
 
 ---
 
 For more details, see the README files in each course subfolder.
-=======
-# HomeProjects
->>>>>>> 9aa957b (Add COP4338 assignment submission with comments and README)
