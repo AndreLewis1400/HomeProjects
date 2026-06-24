@@ -1,4 +1,4 @@
-# Verification: Emojis and User Guides
+# Verification: Documentation Cleanup
 
 **Date:** February 3, 2025  
 **Repos checked:** MenuMap, HomeProjects, Gecko_Guardian, AutoTradeOptions  
@@ -9,10 +9,10 @@
 
 | Check | Status |
 |-------|--------|
-| **Emojis** | **Clean** – No emojis in .md or .html (removed from 152 .md files + 2 HTML talking-points files) |
+| **Markdown/HTML formatting** | **Clean** – Decorative characters removed from 152 .md files + 2 HTML talking-points files |
 | **User guides** | **Clean** – Removed: `User_Guide.md`, `Quick_Start_Guide.md` (2), `Step_by_Step_Papyrus_Instructions.md` (2), `Individual_Use_Case_Diagrams_Guide.md` (2) |
 
-**Actions taken:** Emojis stripped from all markdown and HTML; 7 user-guide files deleted. Changes committed and pushed.
+**Actions taken:** Formatting cleaned in all markdown and HTML; 7 user-guide files deleted. Changes committed and pushed.
 
 ---
 
@@ -20,10 +20,10 @@
 
 | Check | Status |
 |-------|--------|
-| **Emojis** | **Minor** – 4 instances of checkmark (e.g. "Status: Correct") in `Classes/COP4610_Operating_Systems/Assignments/Parallel_Forking_Assignment/sample_output.txt` only |
+| **Formatting** | **Minor** – 4 checkmark symbols (e.g. "Status: Correct") in `Classes/COP4610_Operating_Systems/Assignments/Parallel_Forking_Assignment/sample_output.txt` only |
 | **User guides** | **Clean** – No Quick_Start_Guide, Step_by_Step_Papyrus_Instructions, Individual_Use_Case_Diagrams_Guide, or User_Guide files present |
 
-**Note:** sample_output.txt is assignment sample output; emoji there is optional to remove.
+**Note:** sample_output.txt is assignment sample output; symbols there are optional to remove.
 
 ---
 
@@ -31,7 +31,7 @@
 
 | Check | Status |
 |-------|--------|
-| **Emojis** | **Clean** – No emojis found in .md, .txt, .html |
+| **Formatting** | **Clean** – No decorative characters found in .md, .txt, .html |
 | **User guides** | N/A – No user-guide-style files in repo |
 
 ---
@@ -40,17 +40,17 @@
 
 | Check | Status |
 |-------|--------|
-| **Emojis** | **Present** – Many emojis in .md, .html, .txt (e.g. SYSTEM_STATUS_REPORT.md, dashboard templates, SYSTEM_ARCHITECTURE_DIAGRAM.md, RISK_MANAGEMENT_OPTIMIZATION_COMPLETE.md) |
+| **Formatting** | **Present** – Decorative characters in .md, .html, .txt (e.g. SYSTEM_STATUS_REPORT.md, dashboard templates, SYSTEM_ARCHITECTURE_DIAGRAM.md, RISK_MANAGEMENT_OPTIMIZATION_COMPLETE.md) |
 | **User guides** | No dedicated "user guide" files found |
 
-**Note:** AutoTradeOptions was not part of the earlier emoji/user-guide cleanup. To remove emojis there, run a similar cleanup in that repo.
+**Note:** AutoTradeOptions was not part of the earlier documentation cleanup. Run a similar cleanup in that repo if needed.
 
 ---
 
 ## Summary
 
-| Repo | Emojis | User guides |
-|------|--------|-------------|
+| Repo | Formatting | User guides |
+|------|------------|-------------|
 | **MenuMap** | Clean | Clean |
 | **HomeProjects** | 1 file (sample_output.txt) | Clean |
 | **Gecko_Guardian** | Clean | N/A |

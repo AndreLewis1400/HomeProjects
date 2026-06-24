@@ -2,7 +2,7 @@
 
 ## Commit message hook
 
-To avoid commit messages like "Remove emojis and user guides from docs" in this repo or in **MenuMap** / **Gecko_Guardian** (or any other clone):
+To avoid vague documentation cleanup commit messages in this repo or in **MenuMap** / **Gecko_Guardian** (or any other clone):
 
 ```bash
 cp scripts/commit-msg-hook.sh .git/hooks/commit-msg

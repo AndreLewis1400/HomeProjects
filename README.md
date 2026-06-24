@@ -81,7 +81,7 @@ Classes/
 
 ## Commit messages
 
-Use specific, descriptive commit messages. Avoid generic cleanup phrases such as "Remove emojis and user guides from docs"; prefer messages like "Docs: simplify README" or "Docs: update structure" when changing documentation.
+Use specific, descriptive commit messages. Avoid vague cleanup phrases; prefer messages like "Docs: simplify README" or "Docs: update structure" when changing documentation.
 
 ---
 
